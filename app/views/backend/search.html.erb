@@ -1,0 +1,13 @@
+<h1>SEARCH result :</h1>
+
+<div id="search">
+    <% @describes.each do |describe| %>
+      <h4><%= "#{describe.title}" %></h4>
+      <div class="short_desc">
+        <%= raw "#{describe.short_description}" %>
+      </div>
+      <%= link_to "Edit this describe", edit_describe_path(describe) %> |
+      <%= link_to "Watch it!", backend_describe_show_path(describe) %>
+      <br/>
+    <% end %>
+</div>

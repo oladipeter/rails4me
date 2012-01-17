@@ -1,0 +1,41 @@
+<%= render :partial => "shared/describes_list" %>
+
+<!-- FORMAT TIME -->
+  <% 
+    t = @describe.created_at
+    month = t.strftime("%b")
+    day = t.strftime("%e")
+  %>
+
+  <div class="span-18" id="describe_background">
+  
+    <div class="span-18">     
+      <div class="span-1">
+        <%= image_tag("date_icon.jpg", :class => "main_date") %>
+        <div class="date_box">
+          <div class="month"><%= month %></div>
+          <div class="day"><%= day %></div>
+        </div>
+      </div>
+      <div class="span-16" id="main_title"><%= @describe.title %></div>
+      <div class="span-1 last"></div>
+    </div>
+
+    <div class="span-18">
+      <div class="main_short_description"><div class="describe_list_text"><%= raw @describe.short_description %></div></div>
+      <div class="main_long_description"><div class="describe_list_text"><%= raw @describe.long_description %></div></div>
+      <div class="span-9" id="main_project_name">
+        <div class="describe_list_text">
+        Project name : <%= @describe.project.name %><br/>
+          <% if @describe.gitlink %>
+            <%= link_to "#{@describe.gitlink}", @describe.gitlink %>
+          <% end %>
+          <% if @describe.feedback %>
+            <%= link_to "#{@describe.feedback}", @describe.feedback %>
+          <% end %>
+        </div>
+      </div>
+      <div class="span-9 last" id="main_created_at"><div class="describe_list_text">Created at : <%= @describe.created_at %></div></div>
+    </div>   
+
+  </div>

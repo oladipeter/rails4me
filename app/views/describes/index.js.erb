@@ -1,0 +1,237 @@
+var describes_grid = new Ext.grid.GridPanel({
+    id: 'describes_list_grid',
+    closable: true,
+    title : 'Describes list',
+    renderTo : Ext.getBody(),
+    autoHeight : true,
+
+    // VIEW
+
+    view : new Ext.grid.GridView(),
+
+    // STORE
+
+    store: new Ext.data.Store({
+        id: 'describe_store',
+        autoLoad: true,
+        url: '<%= describes_index_path(:need_data => 'true') %>',
+        reader: new Ext.data.JsonReader({
+            root:'describes',
+            idProperty:'id'
+        },
+                [
+                    {name: 'id',                mapping: 'describe.id'},
+                    {name: 'title',             mapping: 'describe.title'},
+                    {name: 'short_description', mapping: 'describe.short_description'},
+                    {name: 'gitlink',           mapping: 'describe.gitlink'},
+                    {name: 'public',            mapping: 'describe.public'}
+                ]
+
+                )
+    }),
+
+    // SELMODEL
+
+    selModel : new Ext.grid.RowSelectionModel({
+        singleSelect : true
+    }),
+
+    // COLMODEL
+
+    colModel: new Ext.grid.ColumnModel([
+        {
+            hidden: true,
+            dataIndex : 'id'
+        },
+        {
+            header : 'Describe name',
+            sortable : true,
+            width: '300px',
+            dataIndex : 'title'
+        },
+        {
+            header : 'Describe short description',
+            sortable : true,
+            width: '400px',
+            dataIndex : 'short_description'
+        },
+        {
+            header : 'Describe gitLink',
+            sortable : true,
+            width: '250px',
+            dataIndex : 'gitlink'
+        },
+        {
+            header : 'Public?',
+            sortable : true,
+            width: '50px',
+            dataIndex : 'public'
+        }
+    ]),
+
+    // LISTENER
+
+    listeners : {
+        rowdblclick: function(dv, record, item, index, e) {
+            var record = describes_grid.selModel.getSelected();
+            Ext.Ajax.request({
+                url: '<%= edit_describe_path %>',
+                params: {
+                  id: record.data.id
+                },
+                success: function(response) {
+                    var response_text = response.responseText;
+                    eval(response_text);
+                },
+                failure: function(resp) {
+                    Ext.Msg.alert('Error!', 'Bad response from server!');
+                }
+            });
+        }
+    }
+
+});
+
+var describes_index_window = new Ext.Window({
+    autoHeight: true,
+    maximizable : true,
+    modal: true,
+    y: 200,
+    width: 1020,
+    layout: 'fit',
+    title: 'Rails4me describes',
+
+    items: [
+      describes_grid
+    ],
+
+    tbar: [
+        {
+           xtype : 'button',
+           icon: '../images/exticons/add_project.png',
+           text  : 'Create a new describe',
+            handler: function() {
+                Ext.Ajax.request({
+                    url: '<%= new_describe_path %>',
+                    success: function(response) {
+                        var response_text = response.responseText;
+                        eval(response_text);
+                    },
+                    failure: function(resp) {
+                        Ext.Msg.alert('Error!', 'Bad response from server!');
+                    }
+                });
+            }
+        },
+        '-',
+        {
+           xtype : 'button',
+           icon: '../images/exticons/edit_project.png',
+           text  : 'Edit selected describe',
+           listeners : {
+                click: function() {
+                    var selected_row = describes_grid.selModel.getSelected();
+                    if (describes_grid.getSelectionModel().hasSelection()) {
+                        Ext.Ajax.request({
+                            url: '<%= edit_describe_path %>',
+                            method: 'POST',
+                            params: {
+                                id: selected_row.data.id
+                            },
+                            success: function(response) {
+                                var response_text = response.responseText;
+                                eval(response_text);
+                            },
+                            failure: function(resp) {
+                                Ext.Msg.alert('ERROR!', 'Bad response from server!');
+                            }
+                        });
+                    }
+                    else {
+                        Ext.Msg.alert('ERROR!', 'Please first select a row!');
+                    }
+                }
+           }
+
+        },
+        '-',
+        {
+            xtype : 'button',
+            icon: '../images/exticons/delete_project.png',
+            text  : 'Remove selected describe',
+            handler: function() {
+                var selected_row = describes_grid.getSelectionModel().getSelected();
+                if (describes_grid.getSelectionModel().hasSelection()) {
+
+                    Ext.Msg.show({
+                        title:'Save Changes?',
+                        msg: 'Would you like to delete selected describe?',
+                        buttons: Ext.Msg.YESNOCANCEL,
+                        icon: Ext.MessageBox.QUESTION,
+                        fn: function(btn){
+                          if (btn == 'yes') {
+
+                              Ext.Ajax.request({
+                                  waitMsg: "Please wait",
+                                  url: '<%= destroy_describe_path %>',
+                                  method: 'POST',
+                                  params: {
+                                      id: selected_row.data.id
+                                  },
+                                  success: function() {
+                                      Ext.Msg.alert('Success!', 'Sucessfully destroyed the describe!');
+                                      Ext.getCmp('describes_list_grid').getStore().reload();
+                                      // var response_text = response.responseText;
+                                      // eval(response_text);
+                                  },
+                                  failure: function() {
+                                      Ext.Msg.alert('Error!', 'Bad response from server!');
+                                  }
+                              });
+
+                          }
+                        }
+                    });
+                }
+                else {
+                    Ext.Msg.alert('ERROR!', 'Please first select a row!');
+                }
+            }
+        }
+    ],
+
+    bbar: [
+        {
+            xtype : 'button',
+            icon: '../images/exticons/worksheet.png',
+            text  : ' Information / Worksheet selected describe',
+            listeners: {
+                click: function(){
+                   var selected_row = describes_grid.getSelectionModel().getSelected();
+                   if (describes_grid.getSelectionModel().hasSelection()) {
+                       Ext.Ajax.request({
+                           url: '<%= show_describe_information_path %>',
+                           method: 'POST',
+                           params: {
+                               id: selected_row.data.id
+                           },
+                           success: function(response) {
+                               var response_text = response.responseText;
+                               eval(response_text);
+                           },
+                           failure: function(resp) {
+                               Ext.Msg.alert('ERROR!', 'Bad response from server!');
+                           }
+                       });
+                   }
+                   else {
+                     Ext.Msg.alert('ERROR!', 'Please first select a row!');
+                   }
+                }
+            }
+
+        }
+    ]
+
+});
+describes_index_window.show();

@@ -1,0 +1,225 @@
+var grid = new Ext.grid.GridPanel({
+    id: 'project_list_grid',
+    closable: true,
+    title : 'Project list',
+    renderTo : Ext.getBody(),
+    autoHeight : true,
+
+    // VIEW
+
+    view : new Ext.grid.GridView(),
+
+    // STORE
+
+    store: new Ext.data.Store({
+        id: 'project_store',
+        autoLoad: true,
+        url: '<%= projects_index_path(:need_data => 'true') %>',
+        reader: new Ext.data.JsonReader({
+            idProperty:'id'
+        },
+                [
+                    {name: 'id', mapping: 'id'},
+                    {name: 'name', mapping: 'name'},
+                    {name: 'description', mapping: 'description'},
+                    {name: 'describes', mapping: 'describes'}
+                ]
+
+                )
+    }),
+
+    // SELMODEL
+
+    selModel : new Ext.grid.RowSelectionModel({
+        singleSelect : true
+    }),
+
+    // COLMODEL
+
+    colModel: new Ext.grid.ColumnModel([
+        {
+            header : 'Project name',
+            sortable : true,
+            width: '200px',
+            dataIndex : 'name'
+        },
+        {
+            header : 'Project description',
+            sortable : true,
+            width: '400px',
+            dataIndex : 'description'
+        },
+        {
+            header : 'Describes',
+            sortable : true,
+            width: '200px',
+            dataIndex : 'describes'
+        }
+    ]),
+
+    // LISTENER
+
+    listeners : {
+        rowdblclick: function(dv, record, item, index, e) {
+           var record = grid.selModel.getSelected();
+           Ext.Ajax.request({
+                    url: '<%= edit_project_path %>',
+                    method: 'POST',
+                    params: {
+                      id: record.data.id
+                    },
+                    success: function(response) {
+                        var response_text = response.responseText;
+                        eval(response_text);
+                    },
+                    failure: function(resp) {
+                        Ext.Msg.alert('Hiba', 'Probléma történt a válaszadáskor!');
+                    }
+           });
+        }
+    }
+
+});
+
+var project_index_window = new Ext.Window({
+    autoHeight: true,
+    maximizable : true,
+    modal: true,
+    y: 200,
+    width: 800,
+    layout: 'fit',
+    title: 'Rails4me projects',
+
+    items: [
+      grid
+    ],
+
+    tbar: [
+        {
+           xtype : 'button',
+           icon: '../images/exticons/add_project.png',
+           text  : 'Create a new project',
+            handler: function() {
+                Ext.Ajax.request({
+                    url: '<%= new_project_path %>',
+                    success: function(response) {
+                        var response_text = response.responseText;
+                        eval(response_text);
+                    },
+                    failure: function(resp) {
+                        Ext.Msg.alert('Error!', 'Bad response from server!');
+                    }
+                });
+            }
+        },
+        '-',
+        {
+           xtype : 'button',
+           icon: '../images/exticons/edit_project.png',
+           text  : 'Edit selected project',
+           listeners : {
+                click: function() {
+                    var selected_row = grid.selModel.getSelected();
+                    if (grid.getSelectionModel().hasSelection()) {
+                        Ext.Ajax.request({
+                            url: '<%= edit_project_path %>',
+                            method: 'POST',
+                            params: {
+                                id: selected_row.data.id
+                            },
+                            success: function(response) {
+                                var response_text = response.responseText;
+                                eval(response_text);
+                            },
+                            failure: function(resp) {
+                                Ext.Msg.alert('ERROR!', 'Bad response from server!');
+                            }
+                        });
+                    }
+                    else {
+                        Ext.Msg.alert('ERROR!', 'Please first select a row!');
+                    }
+                }
+           }
+
+        },
+        '-',
+        {
+            xtype : 'button',
+            icon: '../images/exticons/delete_project.png',
+            text  : 'Remove selected project',
+            handler: function() {
+                var selected_row = grid.getSelectionModel().getSelected();
+                if (grid.getSelectionModel().hasSelection()) {
+
+                    Ext.Msg.show({
+                        title:'Save Changes?',
+                        msg: 'Would you like to delete selected project?',
+                        buttons: Ext.Msg.YESNOCANCEL,
+                        icon: Ext.MessageBox.QUESTION,
+                        fn: function(btn){
+                          if (btn == 'yes') {
+
+                              Ext.Ajax.request({
+                                  waitMsg: "Please wait",
+                                  url: '<%= destroy_project_path %>',
+                                  method: 'POST',
+                                  params: {
+                                      id: selected_row.data.id
+                                  },
+                                  success: function() {
+                                      Ext.Msg.alert('Success!', 'Sucessfully destroyed the project!');
+                                      Ext.getCmp('project_list_grid').getStore().reload();
+                                      // var response_text = response.responseText;
+                                      // eval(response_text);
+                                  },
+                                  failure: function() {
+                                      Ext.Msg.alert('Hiba!', 'Probléma történt a válaszadáskor');
+                                  }
+                              });
+
+                          }
+                        }
+                    });
+                }
+                else {
+                    Ext.Msg.alert('ERROR!', 'Please first select a row!');
+                }
+            }
+        }
+    ],
+
+    bbar: [
+        {
+            xtype : 'button',
+            icon: '../images/exticons/worksheet.png',
+            text  : ' Information / Worksheet selected project',
+            listeners : {
+                click: function() {
+                    var record = grid.selModel.getSelected();
+                    if (grid.getSelectionModel().hasSelection()) {
+                        Ext.Ajax.request({
+                            url: '<%= show_project_path %>',
+                            method: 'POST',
+                            params: {
+                                id: record.data.id
+                            },
+                            success: function(response) {
+                                var response_text = response.responseText;
+                                eval(response_text);
+                            },
+                            failure: function(resp) {
+                                Ext.Msg.alert('ERROR!', 'Bad response from server!');
+                            }
+                        });
+                    }
+                    else {
+                        Ext.Msg.alert('ERROR!', 'Please first select a row!');
+                    }
+                }
+            }
+        }
+    ]
+
+});
+project_index_window.show();

@@ -1,0 +1,6 @@
+<% content_for :right do %>
+<h1>Describes</h1>
+  <% @describes.each do |describe| %>    
+    <%= link_to "#{describe.title}", frontend_path(describe.id) %><br/>
+  <% end %>
+<% end %>

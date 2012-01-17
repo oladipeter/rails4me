@@ -1,0 +1,68 @@
+<p id="notice"><%= notice %></p>
+
+<!-- FORMAT TIME -->
+  <%
+    t = @describe.created_at
+    month = t.strftime("%b")
+    day = t.strftime("%e")
+  %>
+
+<div class="span-17" id="describe_background">
+
+    <div class="span-17">
+      <div class="span-1">
+        <%= image_tag("date_icon.jpg", :class => "main_date") %>
+        <div class="date_box">
+          <div class="month"><%= month %></div>
+          <div class="day"><%= day %></div>
+        </div>
+      </div>
+      <div class="span-15" id="main_title"><%= @describe.title %></div>
+      <div class="span-1 last"></div>
+    </div>
+
+    <div class="span-17">
+      <div class="main_short_description"><div class="describe_list_text"><%= raw @describe.short_description %></div></div>
+      <div class="main_long_description"><div class="describe_list_text"><%= raw @describe.long_description %></div></div>      
+    </div>
+
+  </div>
+
+<div class="span-17 append-1">
+  <div class="span-6">
+
+    <div class="link_feedback">
+      <% if @describe.feedback.blank? %>
+      <b>No link</b> to this describe!
+      <% else %>
+        <%= link_to "Direct link to the description!", @describe.feedback %>
+      <% end %>
+    </div>
+
+  </div>
+
+  <div class="span-6" id="gitlink">
+   
+    <div class="link_github">
+      <% if @describe.gitlink.blank? %>
+      <b>No gitlink</b> to this describe!
+      <% else %>
+        <%= link_to "Direct gitlink to the description!", @describe.gitlink %>
+      <% end %>      
+    </div>
+
+  </div>
+
+  <div class="span-5 last">
+    <div class="edit">
+      <%= link_to "Edit describe!", edit_describe_path(@describe.id) %>
+    </div>
+  </div>
+
+</div>
+
+<div class="span-17 append-1">
+  <div class="informacio_email">
+    If you have any questions please mail me! (oladipeter@gmail.com)
+  </div>
+</div>

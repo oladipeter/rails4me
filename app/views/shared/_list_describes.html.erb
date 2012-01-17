@@ -1,0 +1,7 @@
+<% content_for :listing_describes do %>
+  <% @describes.each do |describe| %>
+        <%= describe.title %><br/>
+        <%= describe.short_description %><br/>
+        <br/><br/>
+    <% end %>
+<% end %>

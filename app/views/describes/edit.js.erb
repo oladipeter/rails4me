@@ -1,0 +1,169 @@
+var edit_describe_form = new Ext.form.FormPanel({
+
+    id: 'edit_describe_form',
+    url: '<%= update_describe_path(@describe_id) %>',
+    labelWidth: 130,
+    renderTo: Ext.getBody(),
+    frame: true,
+    autoWidth: true,
+
+    items:[
+        {
+            xtype: 'textfield',
+            hidden: true,
+            name: 'id'
+        },
+        {
+            xtype: 'textfield',
+            fieldLabel: 'Title',
+            width: '98%',
+            name: 'title'
+        },
+        {
+            xtype: 'htmleditor',
+            enableColors: false,
+            enableAlignments: false,
+            fieldLabel: 'Short description',
+            width: 634,
+            name: 'short_description'
+        },
+        {
+            xtype: 'htmleditor',
+            enableColors: false,
+            enableAlignments: false,
+            fieldLabel: 'Long description',
+            width: 634,
+            name: 'long_description'
+        },
+        {
+            xtype: 'textfield',
+            fieldLabel: 'Keywords',
+            width: '98%',
+            name: 'keywords'
+        },
+        {
+            xtype: 'textfield',
+            fieldLabel: 'Gitlink',
+            width: '98%',
+            name: 'gitlink'
+        },
+        {
+            xtype: 'textfield',
+            fieldLabel: 'Feedback link',
+            width: '98%',
+            name: 'feedback'
+        },
+        {
+            xtype: 'combo',
+            width: '98%',
+            id: 'project_combo_store',
+            fieldLabel: 'Project',
+            hiddenName: 'project_id',
+            mode: 'local',
+            valueField: 'id',
+            displayField: 'name',
+            labelStyle: 'font-weight:bold; color: orange;',
+
+            store: new Ext.data.Store({
+                reader: new Ext.data.JsonReader({
+                    fields: [
+                        {name: "id",   mapping: "id"},
+                        {name: "name", mapping: "name"}
+                    ]
+                }),
+                proxy: new Ext.data.HttpProxy({
+                    url: '<%= projects_index_path(:need_data => 'true') %>'
+                }),
+                autoLoad: true,
+            })
+
+        },
+
+        {
+            xtype: 'combo',
+            id: 'public_combo',
+            fieldLabel: 'Public',
+            hiddenName: 'public',
+            width: '98%',
+            emptyText:'Select something...',
+            mode: 'local',
+            store: new Ext.data.ArrayStore({
+                id: 0,
+                fields: [
+                  'value',
+                  'displayText'
+                ],
+                data: [[true, 'Public'], [false, 'Non public']]
+            }),
+            valueField: 'value',
+            displayField: 'displayText',
+
+            listeners: {
+                select: function() {
+                      Ext.Msg.alert('Do you really wanna?!');
+                }
+            }
+        }
+
+    ],
+
+    buttons:[
+        {
+
+            text: 'Update',
+            icon: '../images/exticons/save.png',
+            handler: function() {
+                edit_describe_form.getForm().submit({
+                    success: function(form, action) {
+                        Ext.getCmp('describes_list_grid').getStore().reload();
+                        Ext.getCmp('edit_describe_form_window').close();
+                        Ext.Msg.alert('Success!', 'You saved the new describe to database successfully!');
+                    },
+                    failure: function(form, action) {
+                        Ext.Msg.alert('Error!', 'Cannot update the database!!');
+                    }
+                });
+
+            }
+
+        },
+
+        {
+
+            text: 'Cancel',
+            icon: '../images/exticons/cancel.png',
+            handler: function() {
+                Ext.getCmp('edit_describe_form_window').close();
+            }
+
+        }
+
+    ]
+
+});
+
+var new_describe_window = new Ext.Window({
+    id: 'edit_describe_form_window',
+    autoHeight: true,
+    width: 800,
+    modal: true,
+    layout: 'form',
+    title: 'Edit the project',
+
+    items: [
+      // Load form into window
+      edit_describe_form
+    ]
+});
+
+new_describe_window.show();
+
+// Load data from server database
+edit_describe_form.getForm().load({
+    method:'get',
+    url: '<%= edit_describe_path(:id => @describe_id, :need_data => 'true')%>',
+    waitMsg: 'Loading...'
+});
+
+// set the combo value to database value
+Ext.getCmp('public_combo').setValue(<%= @describe.public %>);

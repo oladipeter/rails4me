@@ -1,0 +1,255 @@
+h1, h2 {
+    font-weight: bold;
+    font-family: arial;
+    font-size: 30px;
+    letter-spacing: -2px;
+    color: #336699;
+}
+
+h3 {
+  color: #A97D50;
+}
+
+p {
+  margin: 15px 0px 15px 0px;
+}
+
+p.notice {
+    margin: 0px;
+    border: none;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #336699;
+}
+
+a, a:hover, a:visited, a:link {
+   background-color: transparent;
+   text-decoration: none;
+   position: relative;   
+   color: #336699;
+   font-weight: bold;
+}
+
+a.button {
+  font-size: 14px;
+  width: auto !important;
+  background-color: #336699;
+  color: #fff;
+  border: none;   
+  padding: 8px;  
+}
+
+input {
+    padding: 4px;
+}
+
+
+#block_1 {
+    width: 100%;
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 0px;
+}
+
+#header {
+    padding: 30px;
+    background-image: url("../images/logo.jpg");
+    background-repeat: no-repeat;
+}
+
+#left {
+    color: #336699;
+    font-family: sans-serif;
+    font-size: 34px;
+    font-weight: bold;
+    letter-spacing: -1px;
+}
+
+.informacio {    
+    font-size: 12px;
+    position: relative;
+    top: -10px;
+    padding-right: 10px;
+}
+
+#right {
+    text-align: right;
+}
+
+#right a {   
+   top: 25px;   
+}
+
+#block_2 {
+   /*background-image: url("../images/ror.jpg");
+   background-repeat: no-repeat;
+   background-position: right center;*/
+}
+
+#block_2 #content .text {    
+    margin-top: 20px;
+}
+
+#describe_list_header {
+    margin-bottom: 10px;
+}
+
+.jobb_oldal_project_lista {
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.jobb_oldal_project_lista h1 {
+  color: #333;
+}
+
+/* KEZDOOLDAL */
+
+#kezdooldal {
+    background-image: url("../images/kezdooldal_background.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+#kezdooldal input {
+    width: 300px;
+    padding: 4px;
+    font-size: 18px;
+}
+
+.projektek_szerkesztese_link  {
+    position: relative;
+    top: -14px;
+}
+
+.projektek_szerkesztese_link a {
+    color: #A77E52;
+}
+
+.submit {
+  width: auto !important;
+  background-color: #336699;
+  color: #fff;
+  border: none;
+}
+
+/* PROJECT OLDAL */
+
+/* LIST */
+
+#project_lista_fejlec  {
+    margin-bottom: 20px;
+}
+
+#project_lista_fejlec strong {
+    font-size: 14px;
+    color: #336699;
+}
+
+.project_text {
+    padding: 10px;
+}
+
+.project_text_action {
+    padding: 10px;
+    text-align: right;
+}
+
+.project_lista_elem {
+    background-image: url("../images/listed_item.jpg");
+    background-repeat: no-repeat;
+    height: 40px;    
+    margin-bottom: 5px;
+}
+
+#uj_project_gomb {
+    margin-bottom: 20px;
+    height: 50px;
+}
+
+/* EDIT */
+
+.destroy_link {
+  background-color: red!important;
+  padding: 6px;
+  color: #fff !important;
+}
+
+/* DESCRIBE OLDAL */
+
+/* LIST */
+
+#describe_lista_fejlec  {
+    margin-bottom: 20px;
+}
+
+#describe_lista_fejlec strong {
+    font-size: 14px;
+    color: #336699;
+    margin-bottom: 0px!important;
+}
+
+.describe_text {
+    padding: 10px;
+}
+
+.describe_text_action {
+    padding: 10px;
+    text-align: right;
+}
+
+.describe_lista_elem {
+    background-image: url("../images/listed_item.jpg");
+    background-repeat: no-repeat;
+    height: 40px;    
+    margin-bottom: 5px;
+}
+
+#uj_leiras_gomb {
+    margin-bottom: 20px;
+    height: 50px;
+}
+
+/* EDIT */
+
+.destroy_link {
+  background-color: red!important;
+  padding: 6px;
+  color: #fff !important;
+}
+
+#describe_short_description {
+    width: 680px!important;
+}
+
+/* SHOW */
+
+#describe_fejlec h1 {
+    height: 40px;
+    background-image: url("../images/clipboard.jpg");
+    background-repeat: no-repeat;
+    background-position: 10px 0px;
+    padding-top: 10px;
+    padding-left: 73px;
+}
+
+#describe_rovid_leiras h3 {
+    text-align: justify;
+    line-height: 22px;
+    margin-bottom: 0px;
+}
+
+#describe_hosszu_leiras {
+    margin-bottom: 10px;
+}
+
+/* LOGIN INFORMACIOK */
+
+#login_informaciok {
+  position: relative;
+  top: 10px;
+  left: -20px;
+}
+

@@ -1,0 +1,150 @@
+var new_describe_form = new Ext.form.FormPanel({
+    url: '<%= create_describe_path %>',
+    labelWidth: 130,
+    renderTo: Ext.getBody(),
+    frame: true,
+    autoWidth: true,
+    items:[
+        {
+            xtype: 'textfield',
+            fieldLabel: 'Title',
+            width: '98%',
+            name: 'describe[title]'
+        },
+
+        {
+            xtype: 'htmleditor',
+            enableColors: false,
+            enableAlignments: false,
+            fieldLabel: 'Short description',
+            width: '98%',
+            name: 'describe[short_description]'
+        },
+
+        {
+            xtype: 'htmleditor',
+            enableColors: false,
+            enableAlignments: false,
+            fieldLabel: 'Long description',
+            width: '98%',
+            name: 'describe[long_description]'
+        },
+
+        {
+            xtype: 'textfield',
+            fieldLabel: 'Keywords',
+            width: '98%',
+            name: 'describe[keywords]'
+        },
+
+        {
+            xtype: 'textfield',
+            fieldLabel: 'Gitlink',
+            width: '98%',
+            name: 'describe[gitlink]'
+        },
+
+        {
+            xtype: 'textfield',
+            fieldLabel: 'Feedback link',
+            width: '98%',
+            name: 'describe[feedback]'
+        },
+
+        {
+            xtype: 'combo',
+            fieldLabel: 'Project ID',
+            width: '98%',
+            hiddenName: 'describe[project_id]',
+            id: 'project_combo_store',
+            mode: 'local',
+            valueField: 'id',
+            displayField: 'name',
+            store: new Ext.data.Store({
+                reader: new Ext.data.JsonReader({
+                    fields: [
+                        {name: "id",   mapping: "id"},
+                        {name: "name", mapping: "name"}
+                    ]
+                }),
+                proxy: new Ext.data.HttpProxy({
+                    url: '<%= projects_index_path(:need_data => 'true') %>'
+                }),
+                autoLoad: true
+            })
+
+        },
+
+        {
+            xtype: 'combo',
+            id: 'public_combo',
+            fieldLabel: 'Public',
+            hiddenName: 'describe[public]',
+            width: '98%',
+            emptyText:'Select something...',
+            mode: 'local',
+            store: new Ext.data.ArrayStore({
+                id: 0,
+                fields: [
+                  'value',
+                  'displayText'
+                ],
+                data: [[true, 'Public'], [false, 'Non public']]
+            }),
+            valueField: 'value',
+            displayField: 'displayText'
+
+        }
+
+    ],
+
+    buttons:[
+        {
+
+            text: 'Save',
+            icon: '../images/exticons/save.png',
+            handler: function() {
+                new_describe_form.getForm().submit({
+                    success: function(form, action) {
+                        Ext.getCmp('describes_list_grid').getStore().reload();
+                        Ext.getCmp('new_describe_form_window').close();
+                        Ext.Msg.alert('Success!', 'You saved the new describe to database successfully!');
+                    },
+                    failure: function(form, action) {
+                        Ext.Msg.alert('Error!', 'Bad response from server');
+                    }
+                });
+
+            }
+
+        },
+
+        {
+
+            text: 'Cancel',
+            icon: '../images/exticons/cancel.png',
+            handler: function() {
+                Ext.getCmp('new_describe_form_window').close();
+            }
+
+        }
+
+    ]
+
+});
+
+var new_describe_window = new Ext.Window({
+    id: 'new_describe_form_window',
+    autoHeight: true,
+    width: 600,
+    modal: true,
+    layout: 'form',
+    title: 'Create a new describe',
+
+    items: [
+      // Load form into window
+      new_describe_form
+    ]
+});
+
+new_describe_window.show();

@@ -1,0 +1,47 @@
+<%= render :partial => "shared/frontend_projects" %>
+
+<h1>Frontend public describes</h1>
+<div class="span-18" id="describes_number">All of describes on website : <%= @all_of_describes %></div>
+
+
+<% @describes.each do |describe| %>
+
+  <!-- FORMAT TIME -->
+  <% 
+    t = describe.created_at
+    month = t.strftime("%b")
+    day = t.strftime("%e")
+  %>
+
+  <div class="span-18" id="describe_background">
+  
+    <div class="span-18">     
+      <div class="span-1">
+        <%= image_tag("date_icon.jpg", :class => "main_date") %>
+        <div class="date_box">
+          <div class="month"><%= month %></div>
+          <div class="day"><%= day %></div>
+        </div>
+      </div>
+      <div class="span-16" id="main_title"><%= link_to "#{describe.title}", main_path(describe) %></div>
+      <div class="span-1 last"></div>
+    </div>
+
+    <div class="span-18">
+      <div class="main_short_description"><div class="describe_list_text"><%= raw describe.short_description %></div></div>
+      <div class="span-9" id="main_project_name"><div class="describe_list_text">Project name : <%= describe.project.name %></div></div>
+      <div class="span-9 last" id="main_created_at"><div class="describe_list_text">Created at : <%= describe.created_at %></div></div>
+    </div>
+
+    <div class="span-18" id="bottom">
+      <div class="read_more">
+         <div class="describe_list_text">           
+           <%= image_tag("read_more.jpg", :class => "read_more_img") %>
+           <div class="read_more_text"><%= link_to "Read more...", main_path(describe) %></div>
+         </div>
+      </div>     
+    </div>
+
+  </div>
+
+<% end %>

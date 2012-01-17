@@ -1,0 +1,59 @@
+<%= form_for(@describe) do |f| %>
+  <% if @describe.errors.any? %>
+    <div id="error_explanation">
+      <h2><%= pluralize(@describe.errors.count, "error") %> prohibited this describe from being saved:</h2>
+
+      <ul>
+      <% @describe.errors.full_messages.each do |msg| %>
+        <li><%= msg %></li>
+      <% end %>
+      </ul>
+    </div>
+  <% end %>
+
+  <div class="field">
+    <%= f.label :public, "Public to frontend?" %><br />
+    <%= f.select( :public, { "Yes" => "1", "No!" => "0"}, :selected => @selected_value ) %>
+  </div>
+
+  <div class="field">
+    <%= f.label :title %><br />
+    <%= f.text_field :title %>
+  </div>
+  <div class="field" id="short_description_beallitasa">
+    <%= f.label :short_description %><br />
+    <%= f.cktext_area :short_description, :toolbar=>'light', :width=>'690px', :height=>'100px', :skin => "v2" %>
+  </div>
+  <div class="field">
+    <%= f.label :long_description %><br />
+    <%= f.cktext_area :long_description, :toolbar=>'basic', :width=>'690px', :height=>'400px', :skin => "v2" %>
+  </div>
+  <div class="span-18">
+    <div class="span-6">
+      <div class="field">
+        <%= f.label :keywords %><br />
+        <%= f.text_field :keywords %>
+      </div>     
+    </div>
+    <div class="span-6">
+      <div class="field">
+        <%= f.label :feedback %><br />
+        <%= f.text_field :feedback %>
+      </div>      
+    </div>    
+    <div class="span-6 last">
+      <div class="field">
+        <%= f.label :gitlink %><br />
+        <%= f.text_field :gitlink %>
+      </div>    
+    </div>
+  </div>
+  <div class="field">
+    <%= f.label :project_id, "Which project?" %><br />
+    <%= f.select("project_id", Project.all.collect {|project| [ project.name, project.id ] }) %>
+  </div>
+
+  <div class="actions">
+    <%= f.submit "Submit", :class => "submit" %>    
+  </div>
+<% end %>

@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Rails4me</title>
+
+  <!-- EXTJS -->
+
+  <%= stylesheet_link_tag "site" %>
+  <%= stylesheet_link_tag "../extjs/resources/css/ext-all" %>
+  <%= stylesheet_link_tag "../extjs/resources/css/xtheme-gray" %>
+  <%= javascript_include_tag "../extjs/adapter/ext/ext-base-debug" %>
+  <%= javascript_include_tag "../extjs/ext-all-debug" %>
+  <%= javascript_include_tag "../extjs/src/locale/ext-lang-hu" %>
+  <%= javascript_tag "Ext.BLANK_IMAGE_URL = '#{Rails.root.to_s}/public/extjs/resources/images/default/s.gif';" %>
+
+  <!-- CKEDITOR -->
+
+  <%= javascript_include_tag "ckeditor/plugins/syntaxhighlight/scripts/shCore" %>
+  <%= javascript_include_tag "ckeditor/plugins/syntaxhighlight/scripts/shBrushBash" %>
+  <%= javascript_include_tag "ckeditor/plugins/syntaxhighlight/scripts/shBrushCpp" %>
+  <%= javascript_include_tag "ckeditor/plugins/syntaxhighlight/scripts/shBrushCSharp" %>
+  <%= javascript_include_tag "ckeditor/plugins/syntaxhighlight/scripts/shBrushCss" %>
+  <%= javascript_include_tag "ckeditor/plugins/syntaxhighlight/scripts/shBrushDelphi" %>
+  <%= javascript_include_tag "ckeditor/plugins/syntaxhighlight/scripts/shBrushDiff" %>
+  <%= javascript_include_tag "ckeditor/plugins/syntaxhighlight/scripts/shBrushGroovy" %>
+  <%= javascript_include_tag "ckeditor/plugins/syntaxhighlight/scripts/shBrushJava" %>
+  <%= javascript_include_tag "ckeditor/plugins/syntaxhighlight/scripts/shBrushJScript" %>
+  <%= javascript_include_tag "ckeditor/plugins/syntaxhighlight/scripts/shBrushPhp" %>
+  <%= javascript_include_tag "ckeditor/plugins/syntaxhighlight/scripts/shBrushPlain" %>
+  <%= javascript_include_tag "ckeditor/plugins/syntaxhighlight/scripts/shBrushPython" %>
+  <%= javascript_include_tag "ckeditor/plugins/syntaxhighlight/scripts/shBrushRuby" %>
+  <%= javascript_include_tag "ckeditor/plugins/syntaxhighlight/scripts/shBrushScala" %>
+  <%= javascript_include_tag "ckeditor/plugins/syntaxhighlight/scripts/shBrushSql" %>
+  <%= javascript_include_tag "ckeditor/plugins/syntaxhighlight/scripts/shBrushVb" %>
+  <%= javascript_include_tag "ckeditor/plugins/syntaxhighlight/scripts/shBrushXml" %>
+  <%= stylesheet_link_tag "syntaxhighlight/shCore" %>
+  <%= stylesheet_link_tag "syntaxhighlight/shThemeDefault" %>
+
+  <!-- DEFAULTS -->
+
+  <%= javascript_include_tag :ckeditor %>
+  <%= csrf_meta_tag %>
+
+  <!--[if lt IE 8]>
+    <link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection"/>
+  <![endif]-->
+
+
+  <script type="text/javascript">
+    SyntaxHighlighter.config.clipboardSwf = 'public/javascripts/ckeditor/plugins/syntaxhighlight/scripts/clipboard.swf';
+    SyntaxHighlighter.all();
+   </script>
+
+</head>
+<body>
+
+
+
+  <% if flash[:notice] %>
+    <p class="notice"><%= flash[:notice] %></p>
+  <% end %>
+
+  <% if flash[:error] %>
+    <p class="error"><%= flash[:error] %></p>
+  <% end %>
+
+  <div id="block_1">
+    <div class="container" id="header">
+      <div class="span-24">
+        <div class="span-12" id="left">
+          &nbsp;
+        </div>
+        <div class="span-12 last" id="right">
+          <div id="login_informaciok">
+            <% if admin_signed_in? %>
+              Time : <b><%= current_admin.current_sign_in_at %></b>
+            <% end %>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div id="tartalom">
+
+  </div>
+
+  <!-- EXTJS TOOLBAR -->
+
+  <script type="text/javascript">
+
+
+      // XSRF protection
+      Ext.Ajax.on('beforerequest', function(o) {
+          var csrf = Ext.select("meta[name='csrf-token']").first();
+          if (csrf) {
+              o.defaultHeaders = Ext.apply(o.defaultHeaders || {}, {'X-CSRF-Token': csrf.getAttribute('content')});
+          }
+      });
+
+      var tb = new Ext.Toolbar({
+          renderTo: Ext.getBody(),
+          autoWidth: true,
+          items: [
+              {
+                  xtype: 'button',
+                  icon: '../images/exticons/project.png',
+                  text: 'Project administration',
+                  handler: function() {
+                      Ext.Ajax.request({
+                          url: '<%= projects_index_path %>',
+                          success: function(response){
+                             var response_text = response.responseText;
+                              eval(response_text);
+                          },
+                          failure: function(resp) {
+                              Ext.Msg.alert('Hiba!', 'Probléma történt a válaszadáskor!!');
+                          }
+                      });
+                  }
+
+              },
+              '-',
+              {
+                  xtype: 'button',
+                  icon: '../images/exticons/describe.png',
+                  text: 'Describe administration',
+                  handler: function() {
+                      Ext.Ajax.request({
+                          url: '<%= describes_index_path %>',
+                          success: function(response){
+                             var response_text = response.responseText;
+                              eval(response_text);
+                          },
+                          failure: function(resp) {
+                              Ext.Msg.alert('Error!', 'Bad response from server!');
+                          }
+                      });
+                  }
+              },
+              '-',
+              {
+                  xtype: 'button',
+                  icon: '../images/exticons/search.png',
+                  text: 'Search'
+              },
+              '->',
+              {
+                  xtype: 'button',
+                  icon: '../images/exticons/admin.png',
+                  text: 'Admins!',
+                  handler: function() {
+                      Ext.Ajax.request({
+                          url: '<%= admin_list_path %>',
+                          success: function(response){
+                             var response_text = response.responseText;
+                             eval(response_text);
+                          },
+                          failure: function(resp) {
+                              Ext.Msg.alert('Hiba!', 'Probléma történt a válaszadáskor!!');
+                          }
+                      });
+                  }
+
+              },
+              '-',
+              'You logged in with this email : <%= current_admin.email %>',
+              '-',
+              {
+                  xtype: 'box',
+                  autoEl: {tag: 'a', href: '<%= destroy_admin_session_path %>', html: 'Logout'}
+              }
+          ]
+      });
+
+  </script>
+
+</body>
+</html>

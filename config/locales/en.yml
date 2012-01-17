@@ -1,0 +1,42 @@
+# Sample localization file for English. Add more files in this directory for other locales.
+# See http://github.com/svenfuchs/rails-i18n/tree/master/rails%2Flocale for starting points.
+
+hu:
+  errors:
+    messages:
+      not_found: "nem található"
+      already_confirmed: "már meg van erősítve"
+      not_locked: "nincs zárolva"
+
+  devise:
+    failure:
+      unauthenticated: 'A folytatáshoz bejelentkezés szükséges.'
+      unconfirmed: 'A folytatáshoz az email cím megerősítése szükséges.'
+      locked: 'A fiók zárolva lett.'
+      invalid: 'Hibás email cím vagy jelszó.'
+      invalid_token: 'Hibás bejelentkező token.'
+      timeout: 'A munkafolyamat lejárt. Újboli bejelentkezés szükséges.'
+      inactive: 'A fiók még nincs aktiválva.'
+    sessions:
+      signed_in: 'Sikeres bejelentkezés.'
+      signed_out: 'A kijelentkezés sikeres.'
+    passwords:
+      send_instructions: 'A megadott címre egy email érkezik hamarosan a további teendőkről.'
+      updated: 'A jelszó megváltozott. Bejelentkezve a felhasználói fiókba'
+    confirmations:
+      send_instructions: 'A megadott címre egy email érkezik a megerősítő linkkel.'
+      confirmed: 'Fiók megerősítve. Bejelentkezve a felhasználói fiókba.'
+    registrations:
+      signed_up: 'Sikeres regisztráció. Hamarosan egy megerősítő email érkezik a megadott címre.'
+      updated: 'Sikeres fiók módosítás.'
+      destroyed: 'Felhasználói fiók törölve.'
+    unlocks:
+      send_instructions: 'Hamarosan a megadott címre érkezik egy email a fiók zárolásának megszüntetésével kapcsolatban.'
+      unlocked: 'A felhasználói fiók zárolása megszűnt. Bejelentkezve a felhasználói fiókba.'
+    mailer:
+      confirmation_instructions:
+        subject: 'Email cím megerősítés'
+      reset_password_instructions:
+        subject: 'Jelszó megváltoztatása'
+      unlock_instructions:
+        subject: 'Fiók zárolásának megszüntetése'

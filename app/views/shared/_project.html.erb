@@ -1,0 +1,4 @@
+<% content_for :listing_projects do %>
+  <%= link_to"#{project.name}", show_all_describe_path(project.id) %><br/>
+  <%= project.description %><br/><br/>
+<% end %>

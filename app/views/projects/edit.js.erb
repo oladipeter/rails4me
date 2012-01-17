@@ -1,0 +1,95 @@
+var edit_project_form = new Ext.form.FormPanel({
+    url: '<%= update_project_path(@project_id) %>',
+    labelWidth: 130,
+    renderTo: Ext.getBody(),
+    frame: true,
+    autoWidth: true,
+
+    reader: new Ext.data.XmlReader({
+        record: 'project',
+        success: '@success'
+    },
+       [
+                {name: 'project[id]', mapping: 'id', hidden: true},
+                {name: 'project[name]', mapping: 'name'},
+                {name: 'project[description]', mapping: 'description'}
+            ]
+          //  ['id', 'name', 'owner']
+    ),
+
+    items:[
+        {
+            xtype: 'textfield',
+            hidden: true,
+            name: 'project[id]'
+        },
+        {
+            xtype: 'textfield',
+            fieldLabel: 'Project name',
+            width: '98%',
+            name: 'project[name]'
+        },
+        {
+            xtype: 'textarea',
+            fieldLabel: 'Project description',
+            width: '98%',
+            name: 'project[description]'
+        }
+    ],
+
+    buttons:[
+        {
+
+            text: 'Save',
+            icon: '../images/exticons/save.png',
+            handler: function() {
+                edit_project_form.getForm().submit({
+                    success: function(form, action) {
+                        Ext.Msg.alert('Success!', 'You saved the new project to database successfully!');
+                        Ext.getCmp('edit_project_window').close();
+                        Ext.getCmp('project_list_grid').getStore().reload();
+                    },
+                    failure: function(form, action) {
+                        Ext.Msg.alert('Error!', 'Bad response from server');
+                    }
+                });
+
+            }
+
+        },
+
+        {
+
+            text: 'Cancel',
+            icon: '../images/exticons/cancel.png',
+            handler: function() {
+                Ext.getCmp('edit_project_window').close();
+            }
+
+        }
+
+    ]
+
+});
+
+var edit_project_window = new Ext.Window({
+    id: 'edit_project_window',
+    autoHeight: true,
+    width: 600,
+    modal: true,
+    layout: 'form',
+    title: 'Updating \"<%= @project.name %>\" project',
+
+    items: [
+      // Load form into window
+      edit_project_form
+    ]
+});
+
+edit_project_window.show();
+
+edit_project_form.getForm().load({
+    method:'get',
+    url: '<%= edit_project_path(:id => @project_id, :need_data => 'true')%>',
+    waitMsg: 'Loading...'
+});

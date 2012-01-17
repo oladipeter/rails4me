@@ -1,0 +1,11 @@
+var project_worksheet_window = new Ext.Window({
+    autoHeight: true,
+    maximizable : true,
+    y: 200,
+    width: 800,
+    layout: 'fit',
+    title: 'Show project worksheet',
+    padding: 20,
+    html: '<b>Project Datasheet | <%= @project.name %></b><br/><br/><%= @project.description %><br/><br/><%= "Created : #{@project.created_at}" %><b> | </b> <%= "Updated : #{@project.updated_at}"%>'
+});
+project_worksheet_window.show();

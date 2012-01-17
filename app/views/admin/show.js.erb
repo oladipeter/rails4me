@@ -1,0 +1,92 @@
+// Record definition
+
+var Admin = Ext.data.Record.create([
+    'id',
+    'email',
+    'sign_in_count',
+    'created_at',
+    'updated_at',
+    'current_sign_in_ip',
+    'last_sign_in_ip',
+    'current_sign_in_at',
+    'last_sign_in_at'
+    // 'director',
+    // 'runtime',
+    // {name: 'released', type: 'date', dateFormat: 'Y-m-d'},
+    // 'genre',
+    // 'tagline',
+    // {name: 'price', type: 'float'},
+    // {name: 'available', type: 'bool'}
+
+    /* name:
+       The name by which the field will be referenced.
+
+       type:
+       The data type in which the raw data item will be converted to when
+       stored in the record. Values may be 'int', 'float', 'string', 'date',
+       or 'bool'.
+
+       dateFormat:
+       If the type of data to be held in the field is a date type, then
+       we need to specify a format string as used by the Date.parseDate function.
+    */
+]);
+
+// Store
+
+var store = new Ext.data.Store({
+    url: '<%= admin_show_path( :need_data => true, :id => @admin.id ) %>',
+    reader: new Ext.data.XmlReader({
+        record:'row'                  // The repeated element which contains row information
+        // idPath:'id',
+        // totalProperty: "results",   // The element which contains the total dataset size (optional)
+        // idProperty: "id",           // The element within the row that provides an ID for the record (optional)
+        // messageProperty: "msg"
+    }, Admin),
+    autoLoad: true
+});
+
+// Grid
+
+var grid = new Ext.grid.GridPanel({
+    renderTo: Ext.getBody(),
+    frame: true,
+    title: 'Admin Database',
+    autoHeight: true,
+    width: 700,
+    store: store,
+    colModel: new Ext.grid.ColumnModel({
+        defaultSortable: true,
+        columns: [
+            {header: "ID",                 dataIndex: 'id',                 width: 50},
+            {header: "Email Address",      dataIndex: 'email',              width: 200},
+            {header: "Sign in count",      dataIndex: 'sign_in_count',      width: 100},
+            {header: "created_at",         dataIndex: 'created_at',         width: 100},
+            {header: "updated_at",         dataIndex: 'updated_at',         width: 100},
+            {header: "current_sign_in_ip", dataIndex: 'current_sign_in_ip', width: 100},
+            {header: "last_sign_in_ip",    dataIndex: 'last_sign_in_ip',    width: 100},
+            {header: "current_sign_in_at", dataIndex: 'current_sign_in_at', width: 100},
+            {header: "last_sign_in_at",    dataIndex: 'last_sign_in_at',    width: 100}
+        ]
+    })
+});
+
+
+// Window
+
+var admin_show_window = new Ext.Window({
+    autoHeight: true,
+    maximizable : false,
+    resizable: false,
+    modal: true,
+    y: 200,
+    width: 950,
+    layout: 'fit',
+    title: '<%= "#{@admin.email} | Admin datasheet "%>',
+
+    items: [
+      grid
+    ]
+
+});
+admin_show_window.show();

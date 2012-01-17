@@ -1,0 +1,83 @@
+<h1>Describe list</h1>
+
+<div class="span-18">
+  <div id="uj_leiras_gomb">
+    <%= link_to image_tag("create_describe.jpg"), new_describe_path%>
+  </div>
+</div>
+
+<div class="clear"></div>
+
+<div id="describe_lista_fejlec">
+
+  <div class="span-18">
+    <div class="span-11">
+      <div class="describe_text">
+        <strong>Describe name</strong>
+      </div>
+    </div>
+
+    <div class="span-2">
+      <div class="describe_text_action">
+        <strong>Public?</strong>
+      </div>
+    </div>
+    
+    <div class="span-4 append-1 last" id="describe_action">
+      <div class="describe_text_action">
+        <strong>Describe action</strong>
+      </div>
+    </div>
+  </div>
+
+</div>
+
+<br/><br/>
+
+<% @describes.each do |describe| %>
+
+  <div class="describe_lista_elem">
+
+    <div class="span-11">
+      <div class="describe_text">
+        <% title = truncate("#{describe.title}", :length => 80, :omission => "...") %>
+        <b><%= link_to "#{title}", backend_describe_show_path(describe) %></b>
+      </div>
+    </div>
+
+    <div class="span-2">
+      <div class="describe_public_action">
+          <% if describe.public? %>
+            <div class="ajax">
+              <!-- ajax response -->
+            </div>
+            <div class="original">
+              <%= link_to "Yes", ajax_public_path(describe, :public => "true" )%>
+            </div>
+          <% else %>
+            <div class="ajax">
+              <!-- ajax response -->
+            </div>
+            <div class="no_public">
+              <%= link_to "No", ajax_public_path(describe, :public => "false" )%>
+            </div>
+          <% end %>
+      </div>
+    </div>
+
+    <div class="span-4 append-1 last">
+      <div class="describe_text_action">
+        <%= link_to 'Edit', edit_describe_path(describe) %> &nbsp; OR &nbsp;
+        <%= link_to 'Destroy', describe, :confirm => 'Are you sure?', :method => :delete %>
+      </div>
+    </div>
+
+  </div>
+
+<% end %>
+
+<div class="span-18">
+  <br/><br/>
+  <%= link_to 'Back to start site', backend_index_path, :class => "button" %>
+  <br/><br/>
+</div>

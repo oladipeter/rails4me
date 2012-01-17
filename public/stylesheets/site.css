@@ -1,0 +1,579 @@
+body {
+    font-size: 12px;
+}
+
+/*h1, h2 {
+    font-weight: bold;
+    font-family: arial;
+    font-size: 30px;
+    letter-spacing: -2px;
+    color: #ddd;
+    color: #A97D50;
+    color: #333;
+}
+
+h3 {
+    color: #A97D50;
+    letter-spacing: -1px;
+    font-weight: bold;
+}
+
+h4 {
+    margin-bottom: 10px;
+    margin-top: 10px;
+    font-family: Georgia;
+    background-color: #fff;
+    color: #444;
+    line-height: 1.2em;
+    font-size: 1.0em;
+    text-transform: uppercase;
+    font-weight: bold;
+}*/
+
+p {
+    margin: 15px 0px 15px 0px;
+}
+
+p.notice {
+    margin: 0px;
+    border: none;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #336699;
+}
+
+a, a:hover, a:visited, a:link {
+    background-color: transparent;
+    text-decoration: none;
+    color: #336699;
+    font-weight: bold;
+}
+
+a.button {
+    font-size: 14px;
+    width: auto !important;
+    background-color: #336699;
+    color: #fff;
+    border: none;
+    padding: 8px;
+}
+
+input {
+    padding: 4px;
+}
+
+img {
+    border: 1px solid #ddd;
+}
+
+a.read_more {
+    display: block;
+    margin: 10px 0px 10px 0px;
+    padding: 5px;
+    padding-left: 12px;
+    background-color: #f1f1f1;
+    color: #333;
+    border: 1px solid #ddd;
+}
+
+#backend_menu img {
+    border: none;
+}
+
+/*
+COLORS : BLUE  : #336699;
+       : BROWN : #A97D50;
+*/
+
+.code {
+    padding: 25px;
+    border: 2px dotted #ccc;
+    background-color: #fff;
+    color: #336699 !important;
+    font-weight: bold;
+    font-size: 11px;
+    background-image: url("../images/code.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+#block_1 {
+    width: 100%;
+    background-color: #f0f0f0;
+    border-bottom: 1px solid #ccc;
+    margin-bottom: 0px;
+}
+
+#header {
+    height: 100px;
+    background-image: url("../images/logo.jpg");
+    background-repeat: no-repeat;
+    background-position: left bottom;
+}
+
+#left {
+    color: #336699;
+    font-family: sans-serif;
+    font-size: 34px;
+    font-weight: bold;
+    letter-spacing: -1px;
+}
+
+.informacio {
+    font-size: 12px;
+    position: relative;
+    top: -10px;
+    padding-right: 10px;
+}
+
+#right {
+    text-align: right;
+}
+
+#right a {
+    top: 25px;
+}
+
+#block_2 {
+    /*background-image: url("../images/ror.jpg");
+    background-repeat: no-repeat;
+    background-position: right center;*/
+}
+
+#block_2 #content .text {
+    margin-top: 20px;
+}
+
+#describe_list_header {
+    margin-bottom: 10px;
+}
+
+.jobb_oldal_project_lista {
+    padding: 20px;
+    background-color: #f0f0f0;
+    border: 1px solid #ccc;
+    border-top: none;
+}
+
+.jobb_oldal_project_lista h1 {
+    color: #333;
+}
+
+/* KEZDOOLDAL */
+
+#kezdooldal {
+    background-image: url("../images/kezdooldal_background.jpg");
+    background-repeat: no-repeat;
+    background-position: bottom right;
+}
+
+#kezdooldal input {
+    width: 300px;
+    padding: 4px;
+    font-size: 18px;
+}
+
+.projektek_szerkesztese_link {
+    position: relative;
+    top: -14px;
+}
+
+.projektek_szerkesztese_link a {
+    color: #A77E52;
+}
+
+.submit {
+    width: auto !important;
+    background-color: #336699;
+    color: #fff;
+    border: none;
+}
+
+/* PROJECT OLDAL */
+
+/* LIST */
+
+#project_lista_fejlec {
+    margin-bottom: 20px;
+}
+
+#project_lista_fejlec strong {
+    font-size: 14px;
+    color: #336699;
+}
+
+.project_text {
+    padding: 10px;
+}
+
+.project_text_action {
+    padding: 10px;
+    text-align: right;
+}
+
+.project_lista_elem {
+    background-image: url("../images/listed_item.jpg");
+    background-repeat: no-repeat;
+    height: 40px;
+    margin-bottom: 5px;
+}
+
+#uj_project_gomb {
+    margin-bottom: 20px;
+    height: 50px;
+}
+
+/* EDIT */
+
+.destroy_link {
+    background-color: red !important;
+    padding: 6px;
+    color: #fff !important;
+}
+
+/* DESCRIBE OLDAL */
+
+/* LIST */
+
+#describe_lista_fejlec {
+    margin-bottom: 20px;
+}
+
+#describe_lista_fejlec strong {
+    font-size: 14px;
+    color: #336699;
+    margin-bottom: 0px !important;
+}
+
+.describe_text {
+    padding: 10px;
+}
+
+.describe_text_action {
+    padding: 10px;
+    text-align: right;
+}
+
+.describe_public_action {
+    padding: 10px;
+    text-align: center;
+}
+
+.describe_public_action strong {
+    color: red;
+}
+
+.describe_lista_elem {
+    background-image: url("../images/listed_item.jpg");
+    background-repeat: no-repeat;
+    height: 40px;
+    margin-bottom: 5px;
+}
+
+#uj_leiras_gomb {
+    margin-bottom: 20px;
+    height: 50px;
+}
+
+/* EDIT */
+
+.destroy_link {
+    background-color: red !important;
+    padding: 6px;
+    color: #fff !important;
+}
+
+#describe_short_description {
+    width: 680px !important;
+}
+
+/* SHOW */
+
+#describe_fejlec {
+    height: 60px;
+    margin: 0px;
+    padding-bottom: 0px;
+}
+
+#describe_fejlec h1 {
+    height: 40px;
+    background-image: url("../images/clipboard.jpg");
+    background-repeat: no-repeat;
+    background-position: 10px 0px;
+    padding-top: 10px;
+    padding-left: 73px;
+}
+
+#describe_rovid_leiras h3 {
+    text-align: justify;
+    line-height: 22px;
+    margin-bottom: 0px;
+}
+
+#describe_hosszu_leiras {
+    margin-bottom: 10px;
+}
+
+.informacio_email {
+    text-align: center;
+    font-weight: bold;
+    padding: 10px;
+    margin: 20px 0px 20px 0px;
+    background-color: #f0f0f0;
+    color: #A97D50;
+}
+
+.link_feedback {
+    padding-left: 20px;
+    background-image: url("../images/link.png");
+    background-repeat: no-repeat;
+}
+
+.link_github {
+    padding-left: 20px;
+    background-image: url("../images/github.jpg");
+    background-repeat: no-repeat;
+    background-position: 15px 0px;
+    text-align: center;
+}
+
+.edit {
+    padding-left: 20px;
+    background-image: url("../images/edit.jpg");
+    background-repeat: no-repeat;
+    background-position: 92px 2px;
+    text-align: right;
+}
+
+/* LOGIN INFORMACIOK */
+
+#login_informaciok {
+    position: relative;
+    left: -20px;
+    font-family: Tahoma;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+#login_informaciok img {
+    position: relative;
+    top: 2px;
+}
+
+/* MAIN PUBLIC DESCRIPTIONS */
+
+#describe_background {
+}
+
+#describes_number {
+    position: relative;
+    top: -10px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+#main_title {
+    font-family: Arial;
+    font-weight: bold;
+    letter-spacing: -2px;
+    font-size: 30px;
+    position: relative;
+    left: 35px;
+    top: 15px;
+    border-bottom: 1px solid #ddd;
+    color: #336699;
+}
+
+#main_title a {
+    color: #336699;
+}
+
+.main_short_description {
+    font-family: 'Times New Roman';
+    color: #A97D50;
+    text-decoration: none;
+    word-spacing: normal;
+    text-align: left;
+    letter-spacing: 0;
+    line-height: 1.3em;
+    font-size: 1.6em;
+    font-style: italic;
+    margin: 30px 0px 0px 0px;
+}
+
+.main_long_description {
+    word-spacing: -1px;
+    font-size: 1.2em;
+    color: #444;
+}
+
+#main_project_name, #main_created_at {
+    font-size: 12px;
+    margin-bottom: 10px;
+    font-weight: bold;
+}
+
+#main_created_at .describe_list_text {
+    text-align: right;
+}
+
+.main_date {
+    border: none;
+    position: absolute;
+    z-index: -10;
+}
+
+.date_box {
+}
+
+.month {
+    display: block;
+    width: 55px;
+    position: relative;
+    top: 8px;
+    left: 5px;
+    text-align: center;
+    font-weight: bold;
+    color: #fff;
+}
+
+.day {
+    width: 55px;
+    font-size: 27px;
+    font-family: georgia;
+    font-weight: bold;
+    position: relative;
+    top: 3px;
+    left: 5px;
+    text-align: center;
+}
+
+.read_more_img {
+    border: none;
+    margin-top: 10px;
+    position: absolute;
+    z-index: -1;
+}
+
+.left_corner {
+}
+
+.read_more_text {
+    padding-left: 20px;
+    padding-top: 11px;
+    font-size: 12px;
+    margin-bottom: 20px;
+}
+
+#bottom {
+    display: block;
+    padding-bottom: 10px;
+    margin: 0px 0px 20px 0px;
+}
+
+.describe_list_text {
+    padding: 0px 20px 20px 20px;
+}
+
+.describe_list_text a {
+    font-size: 10px;
+}
+
+.describe_list_text img {
+  margin-right: 15px;
+  border: none;
+}
+
+.right_container {
+    padding-top: 20px;
+}
+
+/* BACKEND MENU */
+
+span.project_name {
+    font-family: Georgia;
+    background-color: #fff;
+    line-height: 1.2em;
+    font-size: 1.5em;
+    text-transform: uppercase;
+    font-weight: bold;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.project_name a {
+    color: #444;
+}
+
+#backend_menu_block {
+    margin-bottom: 40px;
+}
+
+.no_public a {
+    color: red;
+}
+
+#search {
+    font-size: 22px;
+}
+
+.search_label {
+    display: block;
+    margin-top: 10px;
+    font-size: 16px;
+    display: none;
+}
+
+#search h4 {
+    font-size: 18px;
+}
+
+#search a {
+    margin: 0px;
+    font-size: 12px;
+    color: #333;
+}
+
+#search .short_desc {
+  font-size: 11px;
+  line-height: 12px;
+}
+
+#search p {
+    margin: 0px;
+    padding: 0px;
+    color: #336699;
+    padding: 10px;
+   background-color: #f1f1f1;
+   border: 1px solid #ccc;
+   text-align: justify;
+}
+
+#frontend_index {
+    padding: 20px;
+    background-image: url("../images/title_background.png");
+    background-repeat: no-repeat;
+    background-position: 0px 8px;
+}
+
+#frontend_index h1 {
+    font-family: Tahoma;
+    font-size: 28px;
+    letter-spacing: -1px;
+    font-weight: bold;
+    position: relative;
+    left: -10px;
+}
+
+/* EXTJS */
+
+.describe_title {
+    font-size: 13px;
+    text-transform: uppercase;
+    font-weight: bold;
+}
+
+.describe_container {
+    text-align: justify;
+}
+

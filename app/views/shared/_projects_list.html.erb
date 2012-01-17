@@ -1,0 +1,6 @@
+<% content_for :right do %>
+<h1>Projects</h1>
+  <% @projects.each do |project| %>
+    <%= project.name %><br/><br/>
+  <% end %>
+<% end %>

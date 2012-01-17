@@ -1,0 +1,39 @@
+var show_describe_information = new Ext.Window({
+    id: 'show_describe_information',
+    width: 600,
+    height: 300,
+    padding: 10,
+    modal: true,
+    autoScroll: true,
+    layout: 'form',
+    title: '<%= @describe.title %>',
+    html: '<div class="describe_title"><%= raw @describe.short_description %></div><br/><div class="describe_container"><%= raw @describe.long_description %></div>',
+
+    tbar:[
+        {
+            xtype: 'button',
+            text: 'Edit the \"<%= @describe.title %>\" describe',
+            listeners: {
+              click: function() {
+                  Ext.Ajax.request({
+                      url: '<%= edit_describe_path %>',
+                      method: 'POST',
+                      params: {
+                          id: '<%= @describe.id %>'
+                      },
+                      success: function(response) {
+                          var response_text = response.responseText;
+                          eval(response_text);
+                      },
+                      failure: function(resp) {
+                          Ext.Msg.alert('ERROR!', 'Bad response from server!');
+                      }
+                  });
+              }
+            }
+        }
+    ]
+
+});
+
+show_describe_information.show();

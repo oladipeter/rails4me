@@ -1,0 +1,9 @@
+<% content_for :listing_projects do %>
+<h1>Projects</h1>
+  <% @projects.each do |project| %>
+  <b><%= link_to"#{project.name}", show_all_describe_path(project.id) %></b><br/>
+    <%= project.description %><br/><br/>
+  <% end %>
+<% end %>
+
+<%= debug params %>

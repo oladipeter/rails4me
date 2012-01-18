@@ -2,6 +2,7 @@
   <dictionary name="oladipeter">
     <words>
       <w>afterrender</w>
+      <w>beforeload</w>
       <w>beforeshow</w>
       <w>gitlink</w>
       <w>mouseout</w>

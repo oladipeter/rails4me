@@ -26,12 +26,14 @@ var edit_project_form = new Ext.form.FormPanel({
         {
             xtype: 'textfield',
             fieldLabel: 'Project name',
+            allowBlank: false,
             width: '98%',
             name: 'project[name]'
         },
         {
             xtype: 'textarea',
             fieldLabel: 'Project description',
+            allowBlank: false,
             width: '98%',
             name: 'project[description]'
         }
@@ -50,7 +52,12 @@ var edit_project_form = new Ext.form.FormPanel({
                         Ext.getCmp('project_list_grid').getStore().reload();
                     },
                     failure: function(form, action) {
-                        Ext.Msg.alert('Error!', 'Bad response from server');
+                        Ext.Msg.show({
+                            title: 'Rails4me_app',
+                            msg: 'Cannot saved into the database,<br/> please check your fields!',
+                            icon: Ext.MessageBox.INFO,
+                            buttons: Ext.MessageBox.OK
+                        });
                     }
                 });
 

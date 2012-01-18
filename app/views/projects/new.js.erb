@@ -1,3 +1,5 @@
+Ext.QuickTips.init();
+
 var project_form = new Ext.form.FormPanel({
     url: '<%= create_project_path %>',
     labelWidth: 130,
@@ -7,12 +9,14 @@ var project_form = new Ext.form.FormPanel({
     items:[
         {
             xtype: 'textfield',
+            allowBlank: false,
             fieldLabel: 'Project name',
             width: '98%',
             name: 'project[name]'
         },
         {
             xtype: 'textarea',
+            allowBlank: false,
             fieldLabel: 'Project description',
             width: '98%',
             name: 'project[description]'
@@ -33,7 +37,12 @@ var project_form = new Ext.form.FormPanel({
                         Ext.getCmp('new_project_form_window').close();
                     },
                     failure: function(form, action) {
-                        Ext.Msg.alert('Error!', 'Bad response from server');
+                        Ext.Msg.show({
+                            title: 'Rails4me_app',
+                            msg: 'Cannot saved into the database,<br/> please check your fields!',
+                            icon: Ext.MessageBox.INFO,
+                            buttons: Ext.MessageBox.OK
+                        });
                     }
                 });
 

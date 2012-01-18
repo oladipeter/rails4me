@@ -1,3 +1,5 @@
+Ext.QuickTips.init();
+
 var edit_describe_form = new Ext.form.FormPanel({
 
     id: 'edit_describe_form',
@@ -16,6 +18,7 @@ var edit_describe_form = new Ext.form.FormPanel({
         {
             xtype: 'textfield',
             fieldLabel: 'Title',
+            allowBlank: false,
             width: '98%',
             name: 'title'
         },
@@ -60,6 +63,7 @@ var edit_describe_form = new Ext.form.FormPanel({
             fieldLabel: 'Project',
             hiddenName: 'project_id',
             mode: 'local',
+            allowBlank: false,
             valueField: 'id',
             displayField: 'name',
             labelStyle: 'font-weight:bold; color: orange;',
@@ -82,6 +86,7 @@ var edit_describe_form = new Ext.form.FormPanel({
         {
             xtype: 'combo',
             id: 'public_combo',
+            allowBlank: false,
             fieldLabel: 'Public',
             hiddenName: 'public',
             width: '98%',
@@ -120,7 +125,12 @@ var edit_describe_form = new Ext.form.FormPanel({
                         Ext.Msg.alert('Success!', 'You saved the new describe to database successfully!');
                     },
                     failure: function(form, action) {
-                        Ext.Msg.alert('Error!', 'Cannot update the database!!');
+                        Ext.Msg.show({
+                            title: 'Rails4me_app',
+                            msg: 'Cannot saved into the database,<br/> please check your fields!',
+                            icon: Ext.MessageBox.INFO,
+                            buttons: Ext.MessageBox.OK
+                        });
                     }
                 });
 

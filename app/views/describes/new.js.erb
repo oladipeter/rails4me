@@ -1,3 +1,5 @@
+Ext.QuickTips.init();
+
 var new_describe_form = new Ext.form.FormPanel({
     url: '<%= create_describe_path %>',
     labelWidth: 130,
@@ -8,6 +10,7 @@ var new_describe_form = new Ext.form.FormPanel({
         {
             xtype: 'textfield',
             fieldLabel: 'Title',
+            allowBlank: false,
             width: '98%',
             name: 'describe[title]'
         },
@@ -58,6 +61,7 @@ var new_describe_form = new Ext.form.FormPanel({
             hiddenName: 'describe[project_id]',
             id: 'project_combo_store',
             mode: 'local',
+            allowBlank: false,
             valueField: 'id',
             displayField: 'name',
             store: new Ext.data.Store({
@@ -80,6 +84,7 @@ var new_describe_form = new Ext.form.FormPanel({
             id: 'public_combo',
             fieldLabel: 'Public',
             hiddenName: 'describe[public]',
+            allowBlank: false,
             width: '98%',
             emptyText:'Select something...',
             mode: 'local',

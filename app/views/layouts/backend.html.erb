@@ -87,6 +87,8 @@
 
   <!-- EXTJS TOOLBAR -->
 
+  <div id="main_content">
+
   <script type="text/javascript">
 
 
@@ -98,6 +100,9 @@
           }
       });
 
+      var myMask = new Ext.LoadMask(Ext.getBody(), {msg:"Kérem várjon..."});
+      // myMask.show();
+
       var tb = new Ext.Toolbar({
           renderTo: Ext.getBody(),
           autoWidth: true,
@@ -107,11 +112,14 @@
                   icon: '../images/exticons/project.png',
                   text: 'Project administration',
                   handler: function() {
+                      myMask.show();
                       Ext.Ajax.request({
                           url: '<%= projects_index_path %>',
                           success: function(response){
+
                              var response_text = response.responseText;
                               eval(response_text);
+                              myMask.hide();
                           },
                           failure: function(resp) {
                               Ext.Msg.alert('Hiba!', 'Probléma történt a válaszadáskor!!');
@@ -123,14 +131,17 @@
               '-',
               {
                   xtype: 'button',
+                  id: "describe_btn",
                   icon: '../images/exticons/describe.png',
                   text: 'Describe administration',
                   handler: function() {
+                      myMask.show();
                       Ext.Ajax.request({
                           url: '<%= describes_index_path %>',
                           success: function(response){
                              var response_text = response.responseText;
                               eval(response_text);
+                              myMask.hide();
                           },
                           failure: function(resp) {
                               Ext.Msg.alert('Error!', 'Bad response from server!');
@@ -146,7 +157,14 @@
               },
               '->',
               {
+                 xtype: 'button',
+                 icon: '../images/exticons/admin.png',
+                 text: 'Test'
+              },
+
+              {
                   xtype: 'button',
+                  id: 'admin',
                   icon: '../images/exticons/admin.png',
                   text: 'Admins!',
                   handler: function() {
@@ -174,6 +192,12 @@
       });
 
   </script>
+
+</div>
+
+<div id="footer">
+
+</div>
 
 </body>
 </html>

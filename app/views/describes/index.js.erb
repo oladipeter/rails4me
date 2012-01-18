@@ -4,6 +4,7 @@ var describes_grid = new Ext.grid.GridPanel({
     title : 'Describes list',
     renderTo : Ext.getBody(),
     autoHeight : true,
+    loadMask: true,
 
     // VIEW
 
@@ -93,6 +94,7 @@ var describes_grid = new Ext.grid.GridPanel({
 });
 
 var describes_index_window = new Ext.Window({
+    id: 'desc_window',
     autoHeight: true,
     maximizable : true,
     modal: true,
@@ -126,6 +128,7 @@ var describes_index_window = new Ext.Window({
         '-',
         {
            xtype : 'button',
+           id: 'edit',
            icon: '../images/exticons/edit_project.png',
            text  : 'Edit selected describe',
            listeners : {

@@ -32,7 +32,7 @@ if(Ext.form.Field){
 }
 
 if(Ext.LoadMask){
-  Ext.LoadMask.prototype.msg = "Betöltés...";
+  Ext.LoadMask.prototype.msg = "Kérem várjon, töltöm az adatokat...";
 }
 
 Date.monthNames = [

@@ -1,0 +1,78 @@
+// Record definition
+
+var search_result = Ext.data.Record.create([
+    'title',
+    'short_description',
+    'created_at'
+    // 'director',
+    // 'runtime',
+    // {name: 'released', type: 'date', dateFormat: 'Y-m-d'},
+    // 'genre',
+    // 'tagline',
+    // {name: 'price', type: 'float'},
+    // {name: 'available', type: 'bool'}
+
+    /* name:
+       The name by which the field will be referenced.
+
+       type:
+       The data type in which the raw data item will be converted to when
+       stored in the record. Values may be 'int', 'float', 'string', 'date',
+       or 'bool'.
+
+       dateFormat:
+       If the type of data to be held in the field is a date type, then
+       we need to specify a format string as used by the Date.parseDate function.
+    */
+]);
+
+// Store
+
+var store = new Ext.data.Store({
+    url: '<%= founded_items_path(:need_data => true, :search_value => @search_value)%>',
+    reader: new Ext.data.XmlReader({
+        record:'row'                  // The repeated element which contains row information
+        // idPath:'id',
+        // totalProperty: "results",   // The element which contains the total dataset size (optional)
+        // idProperty: "id",           // The element within the row that provides an ID for the record (optional)
+        // messageProperty: "msg"
+    }, search_result),
+    autoLoad: true
+});
+
+// Grid
+
+var search_result_grid = new Ext.grid.GridPanel({
+    renderTo: Ext.getBody(),
+    frame: true,
+    title: 'Admin Database',
+    autoHeight: true,
+    width: 700,
+    store: store,
+    colModel: new Ext.grid.ColumnModel({
+        defaultSortable: true,
+        columns: [
+            {header: "Title",             dataIndex: 'title',             width: 500},
+            {header: "Short Description", dataIndex: 'short_description', width: 200},
+            {header: "Created",           dataIndex: 'created_at',        width: 100}
+        ]
+    })
+});
+
+var search_result_window = new Ext.Window({
+    id: 'search_result_window',
+    autoHeight: true,
+    y: 200,
+    width: 600,
+    modal: true,
+    layout: 'form',
+    title: 'Find in contents!',
+    html: 'Ez van a title-ben : <%= @title %>',
+
+    items: [
+      search_result_grid
+    ]
+
+});
+
+search_result_window.show();

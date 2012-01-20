@@ -9,7 +9,7 @@ class BackendController < ApplicationController
   end
 
   def search
-    @describes = Describe.search(params[:search])
+    @describes = Describe.search(params[:title])
   end
 
 end

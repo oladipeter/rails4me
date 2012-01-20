@@ -1,0 +1,88 @@
+Ext.QuickTips.init();
+
+var search_form = new Ext.form.FormPanel({
+    url: '<%= founded_items_path  %>',
+    labelWidth: 130,
+    renderTo: Ext.getBody(),
+    frame: true,
+    autoWidth: true,
+    items:[
+        {
+            xtype: 'label',
+            html: "<b>Find in all describes and more...<b><br/><br/>"
+        },
+
+        {
+            xtype: 'textfield',
+            id: 'title_field',
+            fieldLabel: 'Title',
+            width: '98%',
+            name: 'title'
+        }
+
+    ],
+
+    buttons:[
+        {
+
+            text: 'Search!',
+            icon: '../images/exticons/save.png',
+            handler: function() {
+
+                // User write value into the textfield
+                var search_value = Ext.getCmp('title_field').getValue();
+
+                Ext.Ajax.request({
+                    url: '<%= founded_items_path %>',
+                    params: {
+                        search_value : search_value // Send this parameter to founded items method
+                    },
+                    success: function(response) {
+                        var response_text = response.responseText;
+                        eval(response_text);
+                    },
+                    failure: function(resp) {
+                        Ext.Msg.alert('Error!', 'Bad response from server!');
+                    }
+                });
+
+                /*search_form.getForm().submit({
+                    success: function(response) {
+                       var response_text = response.responseText;
+                       eval(response_text);
+                    },
+                    failure: function(form, action) {
+                        Ext.Msg.show({
+                            title: 'Rails4me_app',
+                            msg: 'Cannot found into the database!',
+                            icon: Ext.MessageBox.INFO,
+                            buttons: Ext.MessageBox.OK
+                        });
+                    }
+                });*/
+
+
+
+            }
+
+        }
+    ]
+
+});
+
+var new_project_window = new Ext.Window({
+    id: 'new_search_form_window',
+    autoHeight: true,
+    y: 200,
+    width: 600,
+    modal: true,
+    layout: 'form',
+    title: 'Find in contents!',
+
+    items: [
+      // Load form into window
+      search_form
+    ]
+});
+
+new_project_window.show();

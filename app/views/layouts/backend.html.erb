@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-  <title>Rails4me</title>
+  <title>Rails44me</title>
 
   <!-- EXTJS -->
 
@@ -81,8 +81,7 @@
     </div>
   </div>
 
-  <div id="tartalom">
-
+  <div class="tartalom">
   </div>
 
   <!-- EXTJS TOOLBAR -->
@@ -91,7 +90,6 @@
 
   <script type="text/javascript">
 
-
       // XSRF protection
       Ext.Ajax.on('beforerequest', function(o) {
           var csrf = Ext.select("meta[name='csrf-token']").first();
@@ -99,6 +97,24 @@
               o.defaultHeaders = Ext.apply(o.defaultHeaders || {}, {'X-CSRF-Token': csrf.getAttribute('content')});
           }
       });
+
+      // Hide the DOM class
+      // Ext.Element.select(".tartalom").hide();
+
+      if (Ext.Element.select(".notice")) {
+        var notice = Ext.Element.select(".notice"); // insert element to a variable
+
+          function slideOutNotice() { //function slide out notice
+              notice.slideOut('t', {
+                  endOpacity: 0, //can be any value between 0 and 1 (e.g. .5)
+                  easing: 'easeOut',
+                  duration: 3,
+                  remove: true
+              });
+          }
+
+        setTimeout("slideOutNotice()",2000); // wait 2 seconds before run the slideOutNotice
+      }
 
       var myMask = new Ext.LoadMask(Ext.getBody(), {msg:"Kérem várjon..."});
       // myMask.show();
@@ -153,7 +169,19 @@
               {
                   xtype: 'button',
                   icon: '../images/exticons/search.png',
-                  text: 'Search'
+                  text: 'Search',
+                  handler: function() {
+                      Ext.Ajax.request({
+                          url: '<%= search_path %>',
+                          success: function(response){
+                             var response_text = response.responseText;
+                              eval(response_text);
+                          },
+                          failure: function(resp) {
+                              Ext.Msg.alert('Error!', 'Bad response from server!');
+                          }
+                      });
+                  }
               },
               '->',
               {
@@ -194,10 +222,5 @@
   </script>
 
 </div>
-
-<div id="footer">
-
-</div>
-
 </body>
 </html>

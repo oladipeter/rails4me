@@ -1,5 +1,7 @@
 Rails4me::Application.routes.draw do
 
+  get "search/index"
+
   get "admin/list"
 
   # Projects routing
@@ -27,15 +29,24 @@ Rails4me::Application.routes.draw do
   match '/admin/list' => 'admin#list', :as => 'admin_list'
   match '/admin/show' => 'admin#show', :as => 'admin_show'
 
+  # Search Routing
+
+  match '/search/search' => 'search#search', :as => 'search'
+  match '/search/founded_items' => 'search#founded_items', :as => 'founded_items'
+
+
+  #-------------------------------------------------------------------------------------------------------------------#
+  #-------------------------------------------------------------------------------------------------------------------#
+
+  # Others
 
   get "jquery/index"
-  get "search/search"
   root :to => "frontend#index", :path => "/"
   get "frontend/index"
   get "backend/index"
   # resources :describes
   match '/describes/:id' => 'describes#show', :as => 'backend_describe_show', :path => '/backend/describe/:id'
-  match '/backend/search' => 'backend#search', :as => 'search', :path => '/backend/search'
+  # match '/backend/search' => 'backend#search', :as => 'search', :path => '/backend/search'
 
   devise_for :admins do
     get "admin", :to => "devise/sessions#new"

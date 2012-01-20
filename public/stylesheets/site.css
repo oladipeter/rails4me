@@ -35,11 +35,14 @@ p {
 }
 
 p.notice {
+    text-align: center;
+    font-family: arial;
     margin: 0px;
     border: none;
     font-weight: bold;
     color: #ffffff;
     background-color: #336699;
+    padding: 10px;
 }
 
 a, a:hover, a:visited, a:link {

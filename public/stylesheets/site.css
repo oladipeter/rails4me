@@ -1,3 +1,25 @@
+/* FONT FACE */
+
+@font-face {
+  font-family: Skinny;
+  src: url(./fonts/KGSkinnyLatte.ttf);
+}
+
+@font-face {
+  font-family: Kid;
+  src: url(./fonts/KIDTYPEP.TTF);
+}
+
+@font-face {
+  font-family: Standard;
+  src: url(./fonts/Standard_International.ttf);
+}
+
+@font-face {
+  font-family: Cicle;
+  src: url(./fonts/Cicle_Fina.ttf);
+}
+
 body {
     font-size: 12px;
 }
@@ -370,15 +392,15 @@ COLORS : BLUE  : #336699;
 
 #describes_number {
     position: relative;
-    top: -10px;
+    top: 5px;
     font-weight: bold;
     margin-bottom: 20px;
 }
 
 #main_title {
-    font-family: Arial;
+    font-family: Cicle, Standard, Skinny, Arial;
+    text-transform: uppercase;
     font-weight: bold;
-    letter-spacing: -2px;
     font-size: 30px;
     position: relative;
     left: 35px;
@@ -443,10 +465,10 @@ COLORS : BLUE  : #336699;
 .day {
     width: 55px;
     font-size: 27px;
-    font-family: georgia;
+    font-family: Standard, georgia;
     font-weight: bold;
     position: relative;
-    top: 3px;
+    top: 8px;
     left: 5px;
     text-align: center;
 }
@@ -489,6 +511,14 @@ COLORS : BLUE  : #336699;
 
 .right_container {
     padding-top: 20px;
+}
+
+.right_container h1 {
+    letter-spacing: 0px;
+    text-transform: uppercase;
+    font-family: Cicle, Standard, Kid, Arial;
+    color: #2C4D6C;
+    font-size: 20px;
 }
 
 /* BACKEND MENU */
@@ -553,6 +583,7 @@ span.project_name {
 }
 
 #frontend_index {
+    height: 60px;
     padding: 20px;
     background-image: url("../images/title_background.png");
     background-repeat: no-repeat;
@@ -560,12 +591,12 @@ span.project_name {
 }
 
 #frontend_index h1 {
-    font-family: Tahoma;
-    font-size: 28px;
+    font-family: Kid, Tahoma;
+    font-size: 18px;
     letter-spacing: -1px;
     font-weight: bold;
     position: relative;
-    left: -10px;
+    left: 10px;
 }
 
 /* EXTJS */

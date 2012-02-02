@@ -2,12 +2,15 @@
 <project version="4">
   <component name="BookmarkManager">
     <bookmark url="file://$PROJECT_DIR$/app/controllers/projects_controller.rb" line="9" mnemonic="7" />
-    <bookmark url="file://$PROJECT_DIR$/app/views/describes/index.js.erb" line="211" mnemonic="9" />
+    <bookmark url="file://$PROJECT_DIR$/app/views/describes/index.js.erb" line="208" mnemonic="9" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2e8749a8-c57b-4113-b8e3-541a5b1af1c0" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/describes/index.xml.builder" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/stylesheets/site.css" afterPath="$PROJECT_DIR$/public/stylesheets/site.css" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/describes_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/describes_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/application_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/application_helper.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/describes/index.js.erb" afterPath="$PROJECT_DIR$/app/views/describes/index.js.erb" />
     </list>
     <ignored path="rails4me.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -31,10 +34,46 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="site.css" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/public/stylesheets/site.css">
+      <file leaf-file-name="describes_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/describes_controller.rb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="470" column="10" selection-start="7646" selection-end="7646" vertical-scroll-proportion="0.8445714">
+            <state line="14" column="11" selection-start="366" selection-end="366" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application_controller.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="2" column="38" selection-start="114" selection-end="114" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.xml.builder" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/describes/index.xml.builder">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="6" column="75" selection-start="230" selection-end="230" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application_helper.rb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="7" column="51" selection-start="187" selection-end="187" vertical-scroll-proportion="0.13222222">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/describes/index.js.erb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="46" column="22" selection-start="1175" selection-end="1175" vertical-scroll-proportion="-25.16">
               <folding />
             </state>
           </provider>
@@ -54,22 +93,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/public/extjs/src/locale/ext-lang-hu.js" />
-        <option value="$PROJECT_DIR$/app/views/projects/index.js.erb" />
-        <option value="$PROJECT_DIR$/app/views/describes/index.js.erb" />
-        <option value="$PROJECT_DIR$/app/views/layouts/backend.html.erb" />
-        <option value="$PROJECT_DIR$/app/views/projects/new.js.erb" />
         <option value="$PROJECT_DIR$/app/controllers/projects_controller.rb" />
         <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/app/models/search.rb" />
         <option value="$PROJECT_DIR$/app/controllers/backend_controller.rb" />
-        <option value="$PROJECT_DIR$/app/models/describe.rb" />
         <option value="$PROJECT_DIR$/app/views/search/founded_items.xml.builder" />
         <option value="$PROJECT_DIR$/app/views/search/search.js.erb" />
         <option value="$PROJECT_DIR$/app/views/search/founded_items.js.erb" />
         <option value="$PROJECT_DIR$/app/controllers/search_controller.rb" />
         <option value="$PROJECT_DIR$/app/views/search/_no_result.js.erb" />
         <option value="$PROJECT_DIR$/public/stylesheets/site.css" />
+        <option value="$PROJECT_DIR$/app/models/describe.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
+        <option value="$PROJECT_DIR$/app/controllers/describes_controller.rb" />
+        <option value="$PROJECT_DIR$/app/views/describes/index.js.erb" />
+        <option value="$PROJECT_DIR$/app/views/describes/index.xml.builder" />
+        <option value="$PROJECT_DIR$/app/helpers/application_helper.rb" />
       </list>
     </option>
   </component>
@@ -129,7 +168,43 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="public" />
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rails4me" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rails4me" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="helpers" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rails4me" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rails4me" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="app" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -143,9 +218,9 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\rails_projects\rails4me\app\views\describes" />
       <recent name="C:\rails_projects\rails4me\app\views\search" />
       <recent name="C:\rails_projects\rails4me\app\views\admin" />
-      <recent name="C:\rails_projects\rails4me\app\views\describes" />
     </key>
   </component>
   <component name="RunManager" selected="Rails.Development: rails4me">
@@ -371,21 +446,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/config/db/schema.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="49" column="16" selection-start="2261" selection-end="2278" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/backend.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="174" column="42" selection-start="6553" selection-end="6553" vertical-scroll-proportion="0.0194508" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/list.js.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="-0.34" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/describes/edit.js.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="145" column="34" selection-start="4165" selection-end="4165" vertical-scroll-proportion="0.5588235" />
@@ -394,21 +454,6 @@
     <entry file="file://$PROJECT_DIR$/app/views/admin/show.js.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="12" column="75" selection-start="254" selection-end="254" vertical-scroll-proportion="0.3529412" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/describes/index.js.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="105" column="4" selection-start="2724" selection-end="2760" vertical-scroll-proportion="0.25671142" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/describes_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/describe.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="10" column="54" selection-start="307" selection-end="307" vertical-scroll-proportion="0.2852349" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/config/routes.rb">
@@ -426,19 +471,9 @@
         <state line="35" column="40" selection-start="844" selection-end="844" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/search/founded_items.js.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="30" column="79" selection-start="815" selection-end="815" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/search/_no_result.js.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/search_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="23" column="55" selection-start="692" selection-end="692" vertical-scroll-proportion="0.43444446" />
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/search/founded_items.xml.builder">
@@ -448,7 +483,63 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/public/stylesheets/site.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="470" column="10" selection-start="7646" selection-end="7646" vertical-scroll-proportion="0.8445714">
+        <state line="470" column="10" selection-start="7646" selection-end="7646" vertical-scroll-proportion="2.7097142">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/search_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="28" column="24" selection-start="816" selection-end="816" vertical-scroll-proportion="0.5288889">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/search/founded_items.js.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="44" selection-start="393" selection-end="393" vertical-scroll-proportion="0.28333333">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/models/describe.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="4" column="3" selection-start="69" selection-end="69" vertical-scroll-proportion="0.075555556">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/describes_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="14" column="11" selection-start="366" selection-end="366" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/describes/index.js.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="46" column="22" selection-start="1175" selection-end="1175" vertical-scroll-proportion="-25.16">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="2" column="38" selection-start="114" selection-end="114" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/describes/index.xml.builder">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="75" selection-start="230" selection-end="230" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="7" column="51" selection-start="187" selection-end="187" vertical-scroll-proportion="0.13222222">
           <folding />
         </state>
       </provider>

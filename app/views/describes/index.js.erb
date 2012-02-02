@@ -1,35 +1,38 @@
+// Record definition
+
+var describes_data = Ext.data.Record.create([
+    'id',
+    'title',
+    'short_description',
+    'gitlink'
+]);
+
+// Store
+
+var describes_store = new Ext.data.Store({
+    url: '<%= describes_index_path(:need_data => 'true') %>',
+    reader: new Ext.data.XmlReader({
+        record:'row'                  // The repeated element which contains row information
+        // idPath:'id',
+        // totalProperty: "results",   // The element which contains the total dataset size (optional)
+        // idProperty: "id",           // The element within the row that provides an ID for the record (optional)
+        // messageProperty: "msg"
+    }, describes_data),
+    autoLoad: true
+});
+
 var describes_grid = new Ext.grid.GridPanel({
     id: 'describes_list_grid',
     closable: true,
     title : 'Describes list',
     renderTo : Ext.getBody(),
+    store: describes_store,
     autoHeight : true,
     loadMask: true,
 
     // VIEW
 
     view : new Ext.grid.GridView(),
-
-    // STORE
-
-    store: new Ext.data.Store({
-        id: 'describe_store',
-        autoLoad: true,
-        url: '<%= describes_index_path(:need_data => 'true') %>',
-        reader: new Ext.data.JsonReader({
-            root:'describes',
-            idProperty:'id'
-        },
-                [
-                    {name: 'id',                mapping: 'describe.id'},
-                    {name: 'title',             mapping: 'describe.title'},
-                    {name: 'short_description', mapping: 'describe.short_description'},
-                    {name: 'gitlink',           mapping: 'describe.gitlink'},
-                    {name: 'public',            mapping: 'describe.public'}
-                ]
-
-                )
-    }),
 
     // SELMODEL
 
@@ -61,12 +64,6 @@ var describes_grid = new Ext.grid.GridPanel({
             sortable : true,
             width: '250px',
             dataIndex : 'gitlink'
-        },
-        {
-            header : 'Public?',
-            sortable : true,
-            width: '50px',
-            dataIndex : 'public'
         }
     ]),
 

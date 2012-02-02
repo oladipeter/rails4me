@@ -10,7 +10,11 @@ class DescribesController < ApplicationController
       end
     else
       @describes = Describe.find(:all)
-      render :json => { :success => :true, :describes => @describes}
+      # render :json => { :success => :true, :describes => @describes}
+      respond_to do |format|
+        format.xml
+      end
+
     end
   end
 

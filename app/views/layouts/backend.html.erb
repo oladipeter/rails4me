@@ -3,58 +3,32 @@
 <head>
   <title>Rails44me</title>
 
-  <!-- EXTJS -->
+  <!-- CSS -->
 
   <%= stylesheet_link_tag "site" %>
   <%= stylesheet_link_tag "../extjs/resources/css/ext-all" %>
   <%= stylesheet_link_tag "../extjs/resources/css/xtheme-gray" %>
-  <%= javascript_include_tag "../extjs/adapter/ext/ext-base-debug" %>
+
+  <!-- JS -->
+
+  <%= javascript_include_tag "jquery", "rails" %>
+  <%= javascript_include_tag "../extjs/adapter/ext/ext-base" %>
   <%= javascript_include_tag "../extjs/ext-all-debug" %>
   <%= javascript_include_tag "../extjs/src/locale/ext-lang-hu" %>
-  <%= javascript_tag "Ext.BLANK_IMAGE_URL = '#{Rails.root.to_s}/public/extjs/resources/images/default/s.gif';" %>
-
-  <!-- CKEDITOR -->
-
-  <%= javascript_include_tag "ckeditor/plugins/syntaxhighlight/scripts/shCore" %>
-  <%= javascript_include_tag "ckeditor/plugins/syntaxhighlight/scripts/shBrushBash" %>
-  <%= javascript_include_tag "ckeditor/plugins/syntaxhighlight/scripts/shBrushCpp" %>
-  <%= javascript_include_tag "ckeditor/plugins/syntaxhighlight/scripts/shBrushCSharp" %>
-  <%= javascript_include_tag "ckeditor/plugins/syntaxhighlight/scripts/shBrushCss" %>
-  <%= javascript_include_tag "ckeditor/plugins/syntaxhighlight/scripts/shBrushDelphi" %>
-  <%= javascript_include_tag "ckeditor/plugins/syntaxhighlight/scripts/shBrushDiff" %>
-  <%= javascript_include_tag "ckeditor/plugins/syntaxhighlight/scripts/shBrushGroovy" %>
-  <%= javascript_include_tag "ckeditor/plugins/syntaxhighlight/scripts/shBrushJava" %>
-  <%= javascript_include_tag "ckeditor/plugins/syntaxhighlight/scripts/shBrushJScript" %>
-  <%= javascript_include_tag "ckeditor/plugins/syntaxhighlight/scripts/shBrushPhp" %>
-  <%= javascript_include_tag "ckeditor/plugins/syntaxhighlight/scripts/shBrushPlain" %>
-  <%= javascript_include_tag "ckeditor/plugins/syntaxhighlight/scripts/shBrushPython" %>
-  <%= javascript_include_tag "ckeditor/plugins/syntaxhighlight/scripts/shBrushRuby" %>
-  <%= javascript_include_tag "ckeditor/plugins/syntaxhighlight/scripts/shBrushScala" %>
-  <%= javascript_include_tag "ckeditor/plugins/syntaxhighlight/scripts/shBrushSql" %>
-  <%= javascript_include_tag "ckeditor/plugins/syntaxhighlight/scripts/shBrushVb" %>
-  <%= javascript_include_tag "ckeditor/plugins/syntaxhighlight/scripts/shBrushXml" %>
-  <%= stylesheet_link_tag "syntaxhighlight/shCore" %>
-  <%= stylesheet_link_tag "syntaxhighlight/shThemeDefault" %>
-
-  <!-- DEFAULTS -->
-
-  <%= javascript_include_tag :ckeditor %>
-  <%= csrf_meta_tag %>
-
-  <!--[if lt IE 8]>
-    <link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection"/>
-  <![endif]-->
+  <%= javascript_include_tag "../ckeditor/ckeditor" %>
+  <%= javascript_include_tag "extjs_ckeditor_plugin" %>
 
 
   <script type="text/javascript">
-    SyntaxHighlighter.config.clipboardSwf = 'public/javascripts/ckeditor/plugins/syntaxhighlight/scripts/clipboard.swf';
-    SyntaxHighlighter.all();
-   </script>
+    Ext.BLANK_IMAGE_URL = "<%= Rails.root %>/public/images/ext_default_image/s.gif"
+  </script>
+
+  <!-- CSRF -->
+
+  <%= csrf_meta_tag %>
 
 </head>
 <body>
-
-
 
   <% if flash[:notice] %>
     <p class="notice"><%= flash[:notice] %></p>
@@ -89,6 +63,10 @@
   <div id="main_content">
 
   <script type="text/javascript">
+
+
+      // Ext.BLANK_IMAGE_URL = '/extjs/resources/images/default/s.gif';
+
 
       // XSRF protection
       Ext.Ajax.on('beforerequest', function(o) {
@@ -184,12 +162,6 @@
                   }
               },
               '->',
-              {
-                 xtype: 'button',
-                 icon: '../images/exticons/admin.png',
-                 text: 'Test'
-              },
-
               {
                   xtype: 'button',
                   id: 'admin',

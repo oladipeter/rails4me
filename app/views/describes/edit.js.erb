@@ -7,7 +7,7 @@ var edit_describe_form = new Ext.form.FormPanel({
     labelWidth: 130,
     renderTo: Ext.getBody(),
     frame: true,
-    autoWidth: true,
+    /*autoWidth: true,*/
 
     items:[
         {
@@ -23,19 +23,20 @@ var edit_describe_form = new Ext.form.FormPanel({
             name: 'title'
         },
         {
-            xtype: 'htmleditor',
-            enableColors: false,
-            enableAlignments: false,
+            xtype: 'ckeditor',
             fieldLabel: 'Short description',
-            width: 634,
-            name: 'short_description'
+            name: 'short_description',
+            CKConfig: {
+                /* Enter your CKEditor config paramaters here or define a custom CKEditor config file. */
+                /*customConfig : 'public/ckeditor/config.js',*/
+                toolbar: 'basic',
+                height : 100,
+                width: 634
+            }
         },
         {
-            xtype: 'htmleditor',
-            enableColors: false,
-            enableAlignments: false,
+            xtype: 'textarea',
             fieldLabel: 'Long description',
-            width: 634,
             name: 'long_description'
         },
         {
@@ -50,6 +51,7 @@ var edit_describe_form = new Ext.form.FormPanel({
             width: '98%',
             name: 'gitlink'
         },
+
         {
             xtype: 'textfield',
             fieldLabel: 'Feedback link',
@@ -154,11 +156,12 @@ var edit_describe_form = new Ext.form.FormPanel({
 
 var new_describe_window = new Ext.Window({
     id: 'edit_describe_form_window',
-    autoHeight: true,
+    scrollable: true,
+    autoHeight: false,
     width: 800,
     modal: true,
     layout: 'form',
-    title: 'Edit the project',
+    title: 'Edit the describe',
 
     items: [
       // Load form into window
@@ -172,7 +175,7 @@ new_describe_window.show();
 edit_describe_form.getForm().load({
     method:'get',
     url: '<%= edit_describe_path(:id => @describe_id, :need_data => 'true')%>',
-    waitMsg: 'Loading...'
+    waitMsg: 'Loading data...'
 });
 
 // set the combo value to database value

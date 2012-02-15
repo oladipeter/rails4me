@@ -4,7 +4,8 @@ var describes_data = Ext.data.Record.create([
     'id',
     'title',
     'short_description',
-    'gitlink'
+    'gitlink',
+    'public'
 ]);
 
 // Store
@@ -64,6 +65,12 @@ var describes_grid = new Ext.grid.GridPanel({
             sortable : true,
             width: '250px',
             dataIndex : 'gitlink'
+        },
+        {
+            header : 'Public',
+            sortable : true,
+            width: '250px',
+            dataIndex : 'public'
         }
     ]),
 

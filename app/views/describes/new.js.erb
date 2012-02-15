@@ -5,7 +5,7 @@ var new_describe_form = new Ext.form.FormPanel({
     labelWidth: 130,
     renderTo: Ext.getBody(),
     frame: true,
-    autoWidth: true,
+    /*autoWidth: true,*/
     items:[
         {
             xtype: 'textfield',
@@ -16,21 +16,28 @@ var new_describe_form = new Ext.form.FormPanel({
         },
 
         {
-            xtype: 'htmleditor',
-            enableColors: false,
-            enableAlignments: false,
+            xtype: 'ckeditor',
             fieldLabel: 'Short description',
-            width: '98%',
-            name: 'describe[short_description]'
+            name: 'describe[short_description]',
+            CKConfig: {
+                /* Enter your CKEditor config paramaters here or define a custom CKEditor config file. */
+                /*customConfig : 'public/ckeditor/config.js',*/
+                toolbar: 'light',
+                height : 100,
+                width: 500
+            }
         },
-
         {
-            xtype: 'htmleditor',
-            enableColors: false,
-            enableAlignments: false,
+            xtype: 'ckeditor',
             fieldLabel: 'Long description',
-            width: '98%',
-            name: 'describe[long_description]'
+            name: 'describe[long_description]',
+            CKConfig: {
+                /* Enter your CKEditor config paramaters here or define a custom CKEditor config file. */
+                /*customConfig : 'public/ckeditor/config.js',*/
+                toolbar: 'light',
+                height : 100,
+                width: 500
+            }
         },
 
         {
@@ -141,7 +148,7 @@ var new_describe_form = new Ext.form.FormPanel({
 var new_describe_window = new Ext.Window({
     id: 'new_describe_form_window',
     autoHeight: true,
-    width: 600,
+    width: 700,
     modal: true,
     layout: 'form',
     title: 'Create a new describe',

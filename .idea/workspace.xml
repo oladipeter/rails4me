@@ -2,15 +2,676 @@
 <project version="4">
   <component name="BookmarkManager">
     <bookmark url="file://$PROJECT_DIR$/app/controllers/projects_controller.rb" line="9" mnemonic="7" />
-    <bookmark url="file://$PROJECT_DIR$/app/views/describes/index.js.erb" line="208" mnemonic="9" />
+    <bookmark url="file://$PROJECT_DIR$/app/views/describes/index.js.erb" line="215" mnemonic="9" />
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2e8749a8-c57b-4113-b8e3-541a5b1af1c0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/app/views/describes/index.xml.builder" />
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/javascripts/extjs_ckeditor_plugin.js" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\app\controllers\main_controller.rb" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\app\views\layouts\describe.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\app\views\layouts\inside.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\app\views\layouts\project.html.erb" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\CHANGES.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\INSTALL.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\LICENSE.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\adapters\jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\core\_bootstrap.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\core\ajax.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\core\ckeditor.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\core\ckeditor_base.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\core\ckeditor_basic.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\core\command.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\core\commanddefinition.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\core\config.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\core\dataprocessor.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\core\dom.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\core\dom\comment.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\core\dom\document.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\core\dom\documentfragment.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\core\dom\domobject.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\core\dom\element.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\core\dom\elementpath.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\core\dom\event.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\core\dom\node.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\core\dom\nodelist.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\core\dom\range.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\core\dom\rangelist.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\core\dom\text.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\core\dom\walker.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\core\dom\window.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\core\dtd.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\core\editor.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\core\editor_basic.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\core\env.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\core\event.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\core\eventInfo.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\core\focusmanager.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\core\htmlparser.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\core\htmlparser\basicwriter.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\core\htmlparser\cdata.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\core\htmlparser\comment.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\core\htmlparser\element.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\core\htmlparser\filter.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\core\htmlparser\fragment.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\core\htmlparser\text.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\core\imagecacher.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\core\lang.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\core\loader.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\core\plugindefinition.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\core\plugins.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\core\resourcemanager.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\core\scriptloader.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\core\skins.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\core\themes.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\core\tools.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\core\ui.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\core\xml.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\lang\_languages.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\lang\_translationstatus.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\lang\af.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\lang\ar.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\lang\bg.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\lang\bn.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\lang\bs.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\lang\ca.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\lang\cs.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\lang\cy.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\lang\da.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\lang\de.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\lang\el.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\lang\en-au.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\lang\en-ca.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\lang\en-gb.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\lang\en.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\lang\eo.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\lang\es.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\lang\et.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\lang\eu.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\lang\fa.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\lang\fi.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\lang\fo.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\lang\fr-ca.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\lang\fr.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\lang\gl.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\lang\gu.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\lang\he.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\lang\hi.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\lang\hr.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\lang\hu.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\lang\is.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\lang\it.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\lang\ja.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\lang\km.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\lang\ko.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\lang\lt.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\lang\lv.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\lang\mn.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\lang\ms.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\lang\nb.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\lang\nl.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\lang\no.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\lang\pl.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\lang\pt-br.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\lang\pt.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\lang\ro.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\lang\ru.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\lang\sk.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\lang\sl.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\lang\sr-latn.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\lang\sr.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\lang\sv.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\lang\th.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\lang\tr.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\lang\uk.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\lang\vi.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\lang\zh-cn.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\lang\zh.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\a11yhelp\dialogs\a11yhelp.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\a11yhelp\lang\en.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\a11yhelp\lang\he.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\a11yhelp\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\about\dialogs\about.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\about\dialogs\logo_ckeditor.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\about\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\ajax_save\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\attachment\dialogs\attachment.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\attachment\images\attachment.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\attachment\lang\en.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\attachment\lang\ru.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\attachment\lang\uk.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\attachment\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\autogrow\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\basicstyles\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\bidi\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\blockquote\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\button\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\clipboard\dialogs\paste.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\clipboard\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\colorbutton\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\colordialog\dialogs\colordialog.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\colordialog\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\contextmenu\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\dialog\dialogDefinition.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\dialog\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\dialogadvtab\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\dialogui\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\div\dialogs\div.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\div\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\domiterator\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\editingblock\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\elementspath\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\embed\dialogs\embed.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\embed\images\embed.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\embed\lang\en.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\embed\lang\ru.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\embed\lang\uk.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\embed\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\enterkey\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\entities\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\fakeobjects\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\filebrowser\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\find\dialogs\find.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\find\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\flash\dialogs\flash.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\flash\images\placeholder.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\flash\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\floatpanel\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\font\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\format\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\forms\dialogs\button.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\forms\dialogs\checkbox.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\forms\dialogs\form.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\forms\dialogs\hiddenfield.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\forms\dialogs\radio.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\forms\dialogs\select.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\forms\dialogs\textarea.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\forms\dialogs\textfield.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\forms\images\hiddenfield.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\forms\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\horizontalrule\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\htmldataprocessor\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\htmlwriter\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\iframedialog\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\image\dialogs\image.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\image\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\indent\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\justify\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\keystrokes\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\link\dialogs\anchor.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\link\dialogs\link.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\link\images\anchor.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\link\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\list\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\listblock\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\liststyle\dialogs\liststyle.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\liststyle\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\maximize\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\menu\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\menubutton\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\newpage\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\pagebreak\images\pagebreak.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\pagebreak\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\panel\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\panelbutton\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\pastefromword\filter\default.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\pastefromword\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\pastetext\dialogs\pastetext.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\pastetext\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\popup\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\preview\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\print\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\removeformat\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\resize\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\richcombo\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\save\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\scayt\dialogs\options.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\scayt\dialogs\toolbar.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\scayt\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\selection\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\showblocks\images\block_address.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\showblocks\images\block_blockquote.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\showblocks\images\block_div.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\showblocks\images\block_h1.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\showblocks\images\block_h2.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\showblocks\images\block_h3.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\showblocks\images\block_h4.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\showblocks\images\block_h5.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\showblocks\images\block_h6.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\showblocks\images\block_p.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\showblocks\images\block_pre.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\showblocks\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\showborders\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\smiley\dialogs\smiley.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\smiley\images\angel_smile.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\smiley\images\angry_smile.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\smiley\images\broken_heart.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\smiley\images\confused_smile.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\smiley\images\cry_smile.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\smiley\images\devil_smile.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\smiley\images\embaressed_smile.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\smiley\images\envelope.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\smiley\images\heart.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\smiley\images\kiss.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\smiley\images\lightbulb.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\smiley\images\omg_smile.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\smiley\images\regular_smile.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\smiley\images\sad_smile.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\smiley\images\shades_smile.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\smiley\images\teeth_smile.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\smiley\images\thumbs_down.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\smiley\images\thumbs_up.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\smiley\images\tounge_smile.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\smiley\images\whatchutalkingabout_smile.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\smiley\images\wink_smile.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\smiley\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\sourcearea\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\specialchar\dialogs\specialchar.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\specialchar\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\styles\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\styles\styles\default.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\stylescombo\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\tab\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\table\dialogs\table.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\table\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\tableresize\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\tabletools\dialogs\tableCell.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\tabletools\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\templates\dialogs\templates.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\templates\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\templates\templates\default.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\templates\templates\images\template1.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\templates\templates\images\template2.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\templates\templates\images\template3.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\toolbar\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\uicolor\dialogs\uicolor.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\uicolor\lang\en.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\uicolor\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\uicolor\uicolor.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\uicolor\yui\assets\hue_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\uicolor\yui\assets\hue_thumb.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\uicolor\yui\assets\picker_mask.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\uicolor\yui\assets\picker_thumb.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\uicolor\yui\assets\yui.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\uicolor\yui\yui.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\undo\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\wsc\dialogs\ciframe.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\wsc\dialogs\tmpFrameset.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\wsc\dialogs\wsc.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\wsc\dialogs\wsc.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\wsc\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\plugins\wysiwygarea\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\skins\kama\dialog.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\skins\kama\editor.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\skins\kama\elementspath.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\skins\kama\icons.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\skins\kama\icons.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\skins\kama\icons_rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\skins\kama\images\dialog_sides.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\skins\kama\images\dialog_sides.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\skins\kama\images\dialog_sides_rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\skins\kama\images\mini.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\skins\kama\images\noimage.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\skins\kama\images\sprites.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\skins\kama\images\sprites_ie6.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\skins\kama\images\toolbar_start.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\skins\kama\mainui.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\skins\kama\menu.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\skins\kama\panel.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\skins\kama\presets.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\skins\kama\reset.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\skins\kama\richcombo.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\skins\kama\skin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\skins\kama\templates.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\skins\kama\toolbar.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\skins\office2003\dialog.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\skins\office2003\editor.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\skins\office2003\elementspath.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\skins\office2003\icons.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\skins\office2003\icons.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\skins\office2003\icons_rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\skins\office2003\images\dialog_sides.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\skins\office2003\images\dialog_sides.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\skins\office2003\images\dialog_sides_rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\skins\office2003\images\mini.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\skins\office2003\images\noimage.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\skins\office2003\images\sprites.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\skins\office2003\images\sprites_ie6.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\skins\office2003\mainui.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\skins\office2003\menu.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\skins\office2003\panel.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\skins\office2003\presets.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\skins\office2003\reset.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\skins\office2003\richcombo.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\skins\office2003\skin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\skins\office2003\templates.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\skins\office2003\toolbar.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\skins\v2\dialog.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\skins\v2\editor.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\skins\v2\elementspath.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\skins\v2\icons.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\skins\v2\icons.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\skins\v2\icons_rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\skins\v2\images\dialog_sides.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\skins\v2\images\dialog_sides.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\skins\v2\images\dialog_sides_rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\skins\v2\images\mini.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\skins\v2\images\noimage.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\skins\v2\images\sprites.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\skins\v2\images\sprites_ie6.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\skins\v2\images\toolbar_start.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\skins\v2\mainui.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\skins\v2\menu.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\skins\v2\panel.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\skins\v2\presets.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\skins\v2\reset.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\skins\v2\richcombo.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\skins\v2\skin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\skins\v2\templates.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\skins\v2\toolbar.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\_source\themes\default\theme.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\adapters\jquery.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\ckeditor.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\ckeditor.pack" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\ckeditor_basic.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\ckeditor_basic_source.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\ckeditor_source.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\config.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\contents.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\css\ckfinder.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\css\fck_dialog.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\css\fck_editor.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\css\swfupload.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\images\add.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\images\cancelbutton.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\images\ckfnothumb.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\images\doc.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\images\mp3.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\images\pdf.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\images\rar.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\images\refresh.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\images\select_files.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\images\spacer.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\images\swf.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\images\toolbar.start.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\images\xls.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\lang\_languages.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\lang\_translationstatus.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\lang\af.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\lang\ar.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\lang\bg.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\lang\bn.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\lang\bs.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\lang\ca.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\lang\cs.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\lang\cy.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\lang\da.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\lang\de.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\lang\el.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\lang\en-au.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\lang\en-ca.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\lang\en-gb.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\lang\en.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\lang\eo.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\lang\es.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\lang\et.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\lang\eu.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\lang\fa.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\lang\fi.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\lang\fo.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\lang\fr-ca.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\lang\fr.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\lang\gl.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\lang\gu.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\lang\he.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\lang\hi.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\lang\hr.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\lang\hu.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\lang\is.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\lang\it.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\lang\ja.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\lang\km.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\lang\ko.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\lang\lt.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\lang\lv.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\lang\mn.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\lang\ms.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\lang\nb.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\lang\nl.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\lang\no.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\lang\pl.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\lang\pt-br.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\lang\pt.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\lang\ro.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\lang\ru.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\lang\sk.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\lang\sl.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\lang\sr-latn.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\lang\sr.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\lang\sv.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\lang\th.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\lang\tr.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\lang\uk.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\lang\vi.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\lang\zh-cn.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\lang\zh.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\a11yhelp\dialogs\a11yhelp.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\a11yhelp\lang\en.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\a11yhelp\lang\he.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\about\dialogs\about.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\about\dialogs\logo_ckeditor.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\ajax_save\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\attachment\dialogs\attachment.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\attachment\images\attachment.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\attachment\lang\en.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\attachment\lang\ru.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\attachment\lang\uk.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\attachment\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\autogrow\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\clipboard\dialogs\paste.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\colordialog\dialogs\colordialog.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\dialog\dialogDefinition.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\div\dialogs\div.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\embed\dialogs\embed.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\embed\images\embed.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\embed\lang\en.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\embed\lang\ru.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\embed\lang\uk.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\embed\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\find\dialogs\find.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\flash\dialogs\flash.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\flash\images\placeholder.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\forms\dialogs\button.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\forms\dialogs\checkbox.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\forms\dialogs\form.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\forms\dialogs\hiddenfield.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\forms\dialogs\radio.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\forms\dialogs\select.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\forms\dialogs\textarea.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\forms\dialogs\textfield.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\forms\images\hiddenfield.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\iframedialog\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\image\dialogs\image.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\link\dialogs\anchor.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\link\dialogs\link.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\link\images\anchor.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\liststyle\dialogs\liststyle.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\pagebreak\images\pagebreak.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\pastefromword\filter\default.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\pastetext\dialogs\pastetext.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\scayt\dialogs\options.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\scayt\dialogs\toolbar.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\showblocks\images\block_address.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\showblocks\images\block_blockquote.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\showblocks\images\block_div.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\showblocks\images\block_h1.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\showblocks\images\block_h2.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\showblocks\images\block_h3.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\showblocks\images\block_h4.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\showblocks\images\block_h5.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\showblocks\images\block_h6.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\showblocks\images\block_p.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\showblocks\images\block_pre.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\smiley\dialogs\smiley.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\smiley\images\angel_smile.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\smiley\images\angry_smile.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\smiley\images\broken_heart.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\smiley\images\confused_smile.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\smiley\images\cry_smile.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\smiley\images\devil_smile.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\smiley\images\embaressed_smile.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\smiley\images\envelope.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\smiley\images\heart.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\smiley\images\kiss.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\smiley\images\lightbulb.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\smiley\images\omg_smile.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\smiley\images\regular_smile.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\smiley\images\sad_smile.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\smiley\images\shades_smile.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\smiley\images\teeth_smile.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\smiley\images\thumbs_down.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\smiley\images\thumbs_up.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\smiley\images\tounge_smile.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\smiley\images\whatchutalkingabout_smile.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\smiley\images\wink_smile.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\specialchar\dialogs\specialchar.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\styles\styles\default.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\styles\styles\my_styles.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\syntaxhighlight\dialogs\syntaxhighlight.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\syntaxhighlight\images\Thumbs.db" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\syntaxhighlight\images\syntaxhighlight.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\syntaxhighlight\lang\en.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\syntaxhighlight\lang\zh-cn.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\syntaxhighlight\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\syntaxhighlight\readme.txt" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\syntaxhighlight\scripts\clipboard.swf" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\syntaxhighlight\scripts\shBrushAS3.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\syntaxhighlight\scripts\shBrushBash.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\syntaxhighlight\scripts\shBrushCSharp.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\syntaxhighlight\scripts\shBrushColdFusion.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\syntaxhighlight\scripts\shBrushCpp.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\syntaxhighlight\scripts\shBrushCss.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\syntaxhighlight\scripts\shBrushDelphi.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\syntaxhighlight\scripts\shBrushDiff.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\syntaxhighlight\scripts\shBrushErlang.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\syntaxhighlight\scripts\shBrushGroovy.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\syntaxhighlight\scripts\shBrushJScript.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\syntaxhighlight\scripts\shBrushJava.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\syntaxhighlight\scripts\shBrushJavaFX.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\syntaxhighlight\scripts\shBrushPerl.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\syntaxhighlight\scripts\shBrushPhp.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\syntaxhighlight\scripts\shBrushPlain.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\syntaxhighlight\scripts\shBrushPowerShell.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\syntaxhighlight\scripts\shBrushPython.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\syntaxhighlight\scripts\shBrushRuby.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\syntaxhighlight\scripts\shBrushScala.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\syntaxhighlight\scripts\shBrushSql.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\syntaxhighlight\scripts\shBrushVb.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\syntaxhighlight\scripts\shBrushXml.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\syntaxhighlight\scripts\shCore.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\syntaxhighlight\scripts\shLegacy.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\syntaxhighlight\styles\help.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\syntaxhighlight\styles\magnifier.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\syntaxhighlight\styles\page_white_code.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\syntaxhighlight\styles\page_white_copy.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\syntaxhighlight\styles\printer.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\syntaxhighlight\styles\shCore.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\syntaxhighlight\styles\shThemeDefault.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\syntaxhighlight\styles\shThemeDjango.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\syntaxhighlight\styles\shThemeEclipse.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\syntaxhighlight\styles\shThemeEmacs.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\syntaxhighlight\styles\shThemeFadeToGrey.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\syntaxhighlight\styles\shThemeMidnight.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\syntaxhighlight\styles\shThemeRDark.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\table\dialogs\table.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\tableresize\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\tabletools\dialogs\tableCell.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\templates\dialogs\templates.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\templates\templates\default.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\templates\templates\images\template1.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\templates\templates\images\template2.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\templates\templates\images\template3.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\uicolor\dialogs\uicolor.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\uicolor\lang\en.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\uicolor\plugin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\uicolor\uicolor.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\uicolor\yui\assets\hue_bg.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\uicolor\yui\assets\hue_thumb.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\uicolor\yui\assets\picker_mask.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\uicolor\yui\assets\picker_thumb.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\uicolor\yui\assets\yui.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\uicolor\yui\yui.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\wsc\dialogs\ciframe.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\wsc\dialogs\tmpFrameset.html" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\wsc\dialogs\wsc.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\plugins\wsc\dialogs\wsc.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\skins\kama\dialog.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\skins\kama\editor.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\skins\kama\icons.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\skins\kama\icons_rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\skins\kama\images\dialog_sides.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\skins\kama\images\dialog_sides.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\skins\kama\images\dialog_sides_rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\skins\kama\images\mini.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\skins\kama\images\noimage.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\skins\kama\images\sprites.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\skins\kama\images\sprites_ie6.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\skins\kama\images\toolbar_start.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\skins\kama\skin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\skins\kama\templates.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\skins\office2003\dialog.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\skins\office2003\editor.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\skins\office2003\icons.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\skins\office2003\icons_rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\skins\office2003\images\dialog_sides.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\skins\office2003\images\dialog_sides.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\skins\office2003\images\dialog_sides_rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\skins\office2003\images\mini.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\skins\office2003\images\noimage.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\skins\office2003\images\sprites.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\skins\office2003\images\sprites_ie6.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\skins\office2003\skin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\skins\office2003\templates.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\skins\v2\dialog.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\skins\v2\editor.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\skins\v2\icons.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\skins\v2\icons_rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\skins\v2\images\dialog_sides.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\skins\v2\images\dialog_sides.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\skins\v2\images\dialog_sides_rtl.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\skins\v2\images\mini.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\skins\v2\images\noimage.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\skins\v2\images\sprites.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\skins\v2\images\sprites_ie6.png" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\skins\v2\images\toolbar_start.gif" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\skins\v2\skin.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\skins\v2\templates.css" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\swfupload\fileprogress.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\swfupload\handlers.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\swfupload\mootools-1.2.3-core-yc.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\swfupload\querystring.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\swfupload\swfupload.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\swfupload\swfupload.queue.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\swfupload\swfupload.swf" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\swfupload\swfupload.swfobject.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\themes\default\theme.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\controls.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\dragdrop.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\effects.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\jquery.min.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\jquery_ujs.js" afterPath="" />
+      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\prototype.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/describes_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/describes_controller.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/helpers/application_helper.rb" afterPath="$PROJECT_DIR$/app/helpers/application_helper.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/describes/edit.js.erb" afterPath="$PROJECT_DIR$/app/views/describes/edit.js.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/describes/index.js.erb" afterPath="$PROJECT_DIR$/app/views/describes/index.js.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/describes/index.xml.builder" afterPath="$PROJECT_DIR$/app/views/describes/index.xml.builder" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/describes/new.js.erb" afterPath="$PROJECT_DIR$/app/views/describes/new.js.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/backend.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/backend.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/frontend.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/frontend.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/login.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/login.html.erb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/application.rb" afterPath="$PROJECT_DIR$/config/application.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/application.js" afterPath="$PROJECT_DIR$/public/javascripts/application.js" />
     </list>
     <ignored path="rails4me.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -34,46 +695,55 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="describes_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/describes_controller.rb">
+      <file leaf-file-name="backend.html.erb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/app/views/layouts/backend.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="14" column="11" selection-start="366" selection-end="366" vertical-scroll-proportion="0.0">
+            <state line="17" column="52" selection-start="543" selection-end="543" vertical-scroll-proportion="-11.115385">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application_controller.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
+      <file leaf-file-name="extjs_ckeditor_plugin.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/javascripts/extjs_ckeditor_plugin.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="2" column="38" selection-start="114" selection-end="114" vertical-scroll-proportion="0.0">
+            <state line="53" column="39" selection-start="1765" selection-end="1765" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.xml.builder" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/describes/index.xml.builder">
+      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="6" column="75" selection-start="230" selection-end="230" vertical-scroll-proportion="0.0">
+            <state line="13" column="30" selection-start="274" selection-end="274" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="application_helper.rb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
+      <file leaf-file-name="edit.js.erb" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/app/views/describes/edit.js.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="7" column="51" selection-start="187" selection-end="187" vertical-scroll-proportion="0.13222222">
+            <state line="36" column="26" selection-start="978" selection-end="978" vertical-scroll-proportion="0.62222224">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/describes/index.js.erb">
+      <file leaf-file-name="config.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/ckeditor/config.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="46" column="22" selection-start="1175" selection-end="1175" vertical-scroll-proportion="-25.16">
+            <state line="52" column="18" selection-start="1817" selection-end="1817" vertical-scroll-proportion="0.0">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="application.rb" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/config/application.rb">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="44" column="64" selection-start="2015" selection-end="2015" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -93,22 +763,22 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/controllers/projects_controller.rb" />
-        <option value="$PROJECT_DIR$/config/routes.rb" />
-        <option value="$PROJECT_DIR$/app/models/search.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/backend_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/search/founded_items.xml.builder" />
-        <option value="$PROJECT_DIR$/app/views/search/search.js.erb" />
-        <option value="$PROJECT_DIR$/app/views/search/founded_items.js.erb" />
-        <option value="$PROJECT_DIR$/app/controllers/search_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/search/_no_result.js.erb" />
-        <option value="$PROJECT_DIR$/public/stylesheets/site.css" />
-        <option value="$PROJECT_DIR$/app/models/describe.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/application_controller.rb" />
-        <option value="$PROJECT_DIR$/app/controllers/describes_controller.rb" />
-        <option value="$PROJECT_DIR$/app/views/describes/index.js.erb" />
         <option value="$PROJECT_DIR$/app/views/describes/index.xml.builder" />
-        <option value="$PROJECT_DIR$/app/helpers/application_helper.rb" />
+        <option value="$PROJECT_DIR$/app/views/describes/index.js.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/frontend.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/describes/new.js.erb" />
+        <option value="$PROJECT_DIR$/public/javascripts/application.js" />
+        <option value="$PROJECT_DIR$/app/views/layouts/login.html.erb" />
+        <option value="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
+        <option value="$PROJECT_DIR$/app/controllers/backend_controller.rb" />
+        <option value="$PROJECT_DIR$/public/javascripts/ckeditor.js" />
+        <option value="$PROJECT_DIR$/public/javascripts/ckeditor_plugin.js" />
+        <option value="$PROJECT_DIR$/app/views/backend/index.html.erb" />
+        <option value="$PROJECT_DIR$/config/application.rb" />
+        <option value="$PROJECT_DIR$/public/javascripts/extjs_ckeditor_plugin.js" />
+        <option value="$PROJECT_DIR$/app/views/layouts/backend.html.erb" />
+        <option value="$PROJECT_DIR$/public/ckeditor/config.js" />
+        <option value="$PROJECT_DIR$/app/views/describes/edit.js.erb" />
       </list>
     </option>
   </component>
@@ -138,8 +808,6 @@
       <sortByType />
     </navigator>
     <panes>
-      <pane id="Scope" />
-      <pane id="RailsProjectView" />
       <pane id="ProjectPane">
         <subPane>
           <PATH>
@@ -168,7 +836,57 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rails4me" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rails4me" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="public" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="ckeditor" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rails4me" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rails4me" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rails4me" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="rails4me" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="config" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="environments" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -183,34 +901,14 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="helpers" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rails4me" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rails4me" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="controllers" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
         </subPane>
       </pane>
+      <pane id="RailsProjectView" />
       <pane id="Favorites" />
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -218,6 +916,7 @@
   </component>
   <component name="RecentsManager">
     <key name="CopyFile.RECENT_KEYS">
+      <recent name="C:\rails_projects\rails4me\public\javascripts" />
       <recent name="C:\rails_projects\rails4me\app\views\describes" />
       <recent name="C:\rails_projects\rails4me\app\views\search" />
       <recent name="C:\rails_projects\rails4me\app\views\admin" />
@@ -397,17 +1096,17 @@
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901832" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3279396" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
-      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.34276563" sideWeight="0.0" order="0" side_tool="false" content_ui="tabs" />
+      <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3598505" sideWeight="0.67206043" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Version Control" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="8" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Ant Build" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3279396" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
-      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901832" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
+      <window_info id="Messages" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901832" sideWeight="0.5" order="9" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Hierarchy" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="2" side_tool="false" content_ui="combo" />
       <window_info id="Inspection" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.4" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
@@ -446,100 +1145,112 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/describes/edit.js.erb">
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="145" column="34" selection-start="4165" selection-end="4165" vertical-scroll-proportion="0.5588235" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/admin/show.js.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="12" column="75" selection-start="254" selection-end="254" vertical-scroll-proportion="0.3529412" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/routes.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="34" column="67" selection-start="1478" selection-end="1491" vertical-scroll-proportion="0.2852349" />
+        <state line="36" column="29" selection-start="838" selection-end="838" vertical-scroll-proportion="0.7002288">
+          <folding />
+        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/projects_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="22" column="16" selection-start="576" selection-end="577" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/search/search.js.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="35" column="40" selection-start="844" selection-end="844" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/search/_no_result.js.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/search/founded_items.xml.builder">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="4" selection-start="174" selection-end="174" vertical-scroll-proportion="0.13222222" />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/public/stylesheets/site.css">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="470" column="10" selection-start="7646" selection-end="7646" vertical-scroll-proportion="2.7097142">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/search_controller.rb">
+    <entry file="file://$PROJECT_DIR$/app/controllers/backend_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="28" column="24" selection-start="816" selection-end="816" vertical-scroll-proportion="0.5288889">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/search/founded_items.js.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="44" selection-start="393" selection-end="393" vertical-scroll-proportion="0.28333333">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/models/describe.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="4" column="3" selection-start="69" selection-end="69" vertical-scroll-proportion="0.075555556">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/describes_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="14" column="11" selection-start="366" selection-end="366" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/describes/index.js.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="46" column="22" selection-start="1175" selection-end="1175" vertical-scroll-proportion="-25.16">
+        <state line="3" column="18" selection-start="104" selection-end="104" vertical-scroll-proportion="0.05666667">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="38" selection-start="114" selection-end="114" vertical-scroll-proportion="0.0">
+        <state line="2" column="53" selection-start="129" selection-end="129" vertical-scroll-proportion="0.037777778">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/describes/index.xml.builder">
+    <entry file="file://$PROJECT_DIR$/app/controllers/describes_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="6" column="75" selection-start="230" selection-end="230" vertical-scroll-proportion="0.0">
+        <state line="53" column="14" selection-start="1193" selection-end="1193" vertical-scroll-proportion="0.4911111">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/helpers/application_helper.rb">
+    <entry file="file://$PROJECT_DIR$/public/javascripts/jquery.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="7" column="51" selection-start="187" selection-end="187" vertical-scroll-proportion="0.13222222">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/backend/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/backend/search.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="30" selection-start="274" selection-end="274" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/application.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="44" column="64" selection-start="2015" selection-end="2015" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="30" column="28" selection-start="1089" selection-end="1090" vertical-scroll-proportion="0.56666666">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="6" column="21" selection-start="375" selection-end="375" vertical-scroll-proportion="0.11333334">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/ckeditor/config.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="52" column="18" selection-start="1817" selection-end="1817" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/extjs_ckeditor_plugin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="53" column="39" selection-start="1765" selection-end="1765" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/backend.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="52" selection-start="543" selection-end="543" vertical-scroll-proportion="-11.115385">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/describes/edit.js.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="36" column="26" selection-start="978" selection-end="978" vertical-scroll-proportion="0.62222224">
           <folding />
         </state>
       </provider>

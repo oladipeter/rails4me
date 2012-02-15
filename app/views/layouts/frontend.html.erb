@@ -2,35 +2,37 @@
 <html>
 <head>
   <title>Rails4me</title>  
+  <!-- CKEDITOR -->
+
   <%= stylesheet_link_tag :all %>
-  <%= javascript_include_tag "ckeditor/plugins/syntaxhighlight/scripts/shCore" %>
-  <%= javascript_include_tag "ckeditor/plugins/syntaxhighlight/scripts/shBrushBash" %>
-  <%= javascript_include_tag "ckeditor/plugins/syntaxhighlight/scripts/shBrushCpp" %>
-  <%= javascript_include_tag "ckeditor/plugins/syntaxhighlight/scripts/shBrushCSharp" %>
-  <%= javascript_include_tag "ckeditor/plugins/syntaxhighlight/scripts/shBrushCss" %>
-  <%= javascript_include_tag "ckeditor/plugins/syntaxhighlight/scripts/shBrushDelphi" %>
-  <%= javascript_include_tag "ckeditor/plugins/syntaxhighlight/scripts/shBrushDiff" %>
-  <%= javascript_include_tag "ckeditor/plugins/syntaxhighlight/scripts/shBrushGroovy" %>
-  <%= javascript_include_tag "ckeditor/plugins/syntaxhighlight/scripts/shBrushJava" %>
-  <%= javascript_include_tag "ckeditor/plugins/syntaxhighlight/scripts/shBrushJScript" %>
-  <%= javascript_include_tag "ckeditor/plugins/syntaxhighlight/scripts/shBrushPhp" %>
-  <%= javascript_include_tag "ckeditor/plugins/syntaxhighlight/scripts/shBrushPlain" %>
-  <%= javascript_include_tag "ckeditor/plugins/syntaxhighlight/scripts/shBrushPython" %>
-  <%= javascript_include_tag "ckeditor/plugins/syntaxhighlight/scripts/shBrushRuby" %>
-  <%= javascript_include_tag "ckeditor/plugins/syntaxhighlight/scripts/shBrushScala" %>
-  <%= javascript_include_tag "ckeditor/plugins/syntaxhighlight/scripts/shBrushSql" %>
-  <%= javascript_include_tag "ckeditor/plugins/syntaxhighlight/scripts/shBrushVb" %>
-  <%= javascript_include_tag "ckeditor/plugins/syntaxhighlight/scripts/shBrushXml" %>
+  <%= javascript_include_tag "../ckeditor/plugins/syntaxhighlight/scripts/shCore" %>
+  <%= javascript_include_tag "../ckeditor/plugins/syntaxhighlight/scripts/shBrushBash" %>
+  <%= javascript_include_tag "../ckeditor/plugins/syntaxhighlight/scripts/shBrushCpp" %>
+  <%= javascript_include_tag "../ckeditor/plugins/syntaxhighlight/scripts/shBrushCSharp" %>
+  <%= javascript_include_tag "../ckeditor/plugins/syntaxhighlight/scripts/shBrushCss" %>
+  <%= javascript_include_tag "../ckeditor/plugins/syntaxhighlight/scripts/shBrushDelphi" %>
+  <%= javascript_include_tag "../ckeditor/plugins/syntaxhighlight/scripts/shBrushDiff" %>
+  <%= javascript_include_tag "../ckeditor/plugins/syntaxhighlight/scripts/shBrushGroovy" %>
+  <%= javascript_include_tag "../ckeditor/plugins/syntaxhighlight/scripts/shBrushJava" %>
+  <%= javascript_include_tag "../ckeditor/plugins/syntaxhighlight/scripts/shBrushJScript" %>
+  <%= javascript_include_tag "../ckeditor/plugins/syntaxhighlight/scripts/shBrushPhp" %>
+  <%= javascript_include_tag "../ckeditor/plugins/syntaxhighlight/scripts/shBrushPlain" %>
+  <%= javascript_include_tag "../ckeditor/plugins/syntaxhighlight/scripts/shBrushPython" %>
+  <%= javascript_include_tag "../ckeditor/plugins/syntaxhighlight/scripts/shBrushRuby" %>
+  <%= javascript_include_tag "../ckeditor/plugins/syntaxhighlight/scripts/shBrushScala" %>
+  <%= javascript_include_tag "../ckeditor/plugins/syntaxhighlight/scripts/shBrushSql" %>
+  <%= javascript_include_tag "../ckeditor/plugins/syntaxhighlight/scripts/shBrushVb" %>
+  <%= javascript_include_tag "../ckeditor/plugins/syntaxhighlight/scripts/shBrushXml" %>
   <%= stylesheet_link_tag "syntaxhighlight/shCore" %>
   <%= stylesheet_link_tag "syntaxhighlight/shThemeDefault" %>
+
   <%= javascript_include_tag :defaults %>
-  <%= javascript_include_tag :ckeditor %>
   <!--[if lt IE 8]>
     <link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection"/>
   <![endif]-->
 
   <script type="text/javascript">
-    SyntaxHighlighter.config.clipboardSwf = 'public/javascripts/ckeditor/plugins/syntaxhighlight/scripts/clipboard.swf';
+    SyntaxHighlighter.config.clipboardSwf = 'public/ckeditor/plugins/syntaxhighlight/scripts/clipboard.swf';
     SyntaxHighlighter.all();
    </script>
 

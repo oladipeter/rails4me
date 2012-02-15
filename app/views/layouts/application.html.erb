@@ -2,62 +2,18 @@
 <html>
 <head>
   <title>Rails4me</title>
-
-  <!-- EXTJS -->
-
-  <%= stylesheet_link_tag "../extjs/resources/css/ext-all.css" %>
-  <%= stylesheet_link_tag "../extjs/resources/css/xtheme-gray.css" %>
-  <%= javascript_include_tag "../extjs/adapter/ext/ext-base-debug.js" %>
-  <%= javascript_include_tag "../extjs/ext-all-debug.js" %>
-  <%= javascript_include_tag "../extjs/src/locale/ext-lang-hu.js" %>
-  <%= javascript_tag "Ext.BLANK_IMAGE_URL = '#{Rails.root.to_s}/public/extjs/resources/images/default/s.gif';" %>
-
-  <!-- CKEDITOR -->
-
   <%= stylesheet_link_tag :all %>
-  <%= javascript_include_tag "ckeditor/plugins/syntaxhighlight/scripts/shCore" %>
-  <%= javascript_include_tag "ckeditor/plugins/syntaxhighlight/scripts/shBrushBash" %>
-  <%= javascript_include_tag "ckeditor/plugins/syntaxhighlight/scripts/shBrushCpp" %>
-  <%= javascript_include_tag "ckeditor/plugins/syntaxhighlight/scripts/shBrushCSharp" %>
-  <%= javascript_include_tag "ckeditor/plugins/syntaxhighlight/scripts/shBrushCss" %>
-  <%= javascript_include_tag "ckeditor/plugins/syntaxhighlight/scripts/shBrushDelphi" %>
-  <%= javascript_include_tag "ckeditor/plugins/syntaxhighlight/scripts/shBrushDiff" %>
-  <%= javascript_include_tag "ckeditor/plugins/syntaxhighlight/scripts/shBrushGroovy" %>
-  <%= javascript_include_tag "ckeditor/plugins/syntaxhighlight/scripts/shBrushJava" %>
-  <%= javascript_include_tag "ckeditor/plugins/syntaxhighlight/scripts/shBrushJScript" %>
-  <%= javascript_include_tag "ckeditor/plugins/syntaxhighlight/scripts/shBrushPhp" %>
-  <%= javascript_include_tag "ckeditor/plugins/syntaxhighlight/scripts/shBrushPlain" %>
-  <%= javascript_include_tag "ckeditor/plugins/syntaxhighlight/scripts/shBrushPython" %>
-  <%= javascript_include_tag "ckeditor/plugins/syntaxhighlight/scripts/shBrushRuby" %>
-  <%= javascript_include_tag "ckeditor/plugins/syntaxhighlight/scripts/shBrushScala" %>
-  <%= javascript_include_tag "ckeditor/plugins/syntaxhighlight/scripts/shBrushSql" %>
-  <%= javascript_include_tag "ckeditor/plugins/syntaxhighlight/scripts/shBrushVb" %>
-  <%= javascript_include_tag "ckeditor/plugins/syntaxhighlight/scripts/shBrushXml" %>
-  <%= stylesheet_link_tag "syntaxhighlight/shCore" %>
-  <%= stylesheet_link_tag "syntaxhighlight/shThemeDefault" %>
-
-  <!-- DEFAULTS -->
-
-  <%= javascript_include_tag :defaults %>
-  <%= javascript_include_tag :ckeditor %>
   <%= csrf_meta_tag %>
-
   <!--[if lt IE 8]>
     <link rel="stylesheet" href="css/blueprint/ie.css" type="text/css" media="screen, projection"/>
   <![endif]-->
-
-  <script type="text/javascript">
-    SyntaxHighlighter.config.clipboardSwf = 'public/javascripts/ckeditor/plugins/syntaxhighlight/scripts/clipboard.swf';
-    SyntaxHighlighter.all();
-   </script>
-
 </head>
 <body>
 
   <% if flash[:notice] %>
     <p class="notice"><%= flash[:notice] %></p>
   <% end %>
-  
+
   <% if flash[:error] %>
     <p class="error"><%= flash[:error] %></p>
   <% end %>
@@ -68,12 +24,12 @@
         <div class="span-18" id="left">
           &nbsp;
         </div>
-        <div class="span-6 last" id="right">                    
+        <div class="span-6 last" id="right">
         </div>
       </div>
     </div>
   </div>
-  
+
   <div id="block_2">
     <div class="container">
       <div class="span-24">
@@ -82,7 +38,7 @@
             <%= yield %>
           </div>
         </div>
-        <div class="span-6 last" id="list">          
+        <div class="span-6 last" id="list">
         </div>
       </div>
     </div>

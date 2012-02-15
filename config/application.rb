@@ -40,7 +40,7 @@ module Rails4me
     config.filter_parameters += [:password]
 
     #CKeditor
-    config.autoload_paths += %W( #{config.root}/app/models/ckeditor )
+    # config.autoload_paths += %W( #{config.root}/app/models/ckeditor )
 
     #jquery
     config.action_view.javascript_expansions[:defaults] = %w(jquery rails)

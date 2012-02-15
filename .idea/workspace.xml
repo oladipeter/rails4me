@@ -6,11 +6,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="2e8749a8-c57b-4113-b8e3-541a5b1af1c0" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/public/javascripts/extjs_ckeditor_plugin.js" />
-      <change type="DELETED" beforePath="C:\rails_projects\rails4me\app\controllers\main_controller.rb" afterPath="" />
-      <change type="DELETED" beforePath="C:\rails_projects\rails4me\app\views\layouts\describe.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="C:\rails_projects\rails4me\app\views\layouts\inside.html.erb" afterPath="" />
-      <change type="DELETED" beforePath="C:\rails_projects\rails4me\app\views\layouts\project.html.erb" afterPath="" />
       <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\CHANGES.html" afterPath="" />
       <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\INSTALL.html" afterPath="" />
       <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\LICENSE.html" afterPath="" />
@@ -654,24 +649,11 @@
       <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\swfupload\swfupload.swf" afterPath="" />
       <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\swfupload\swfupload.swfobject.js" afterPath="" />
       <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\themes\default\theme.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\controls.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\dragdrop.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\effects.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\jquery.min.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\jquery_ujs.js" afterPath="" />
-      <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\prototype.js" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/controllers/application_controller.rb" afterPath="$PROJECT_DIR$/app/controllers/application_controller.rb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/describes/edit.js.erb" afterPath="$PROJECT_DIR$/app/views/describes/edit.js.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/describes/index.js.erb" afterPath="$PROJECT_DIR$/app/views/describes/index.js.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/describes/index.xml.builder" afterPath="$PROJECT_DIR$/app/views/describes/index.xml.builder" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/describes/new.js.erb" afterPath="$PROJECT_DIR$/app/views/describes/new.js.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/application.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/application.html.erb" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/backend.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/backend.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/frontend.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/frontend.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/layouts/login.html.erb" afterPath="$PROJECT_DIR$/app/views/layouts/login.html.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/application.rb" afterPath="$PROJECT_DIR$/config/application.rb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/application.js" afterPath="$PROJECT_DIR$/public/javascripts/application.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/routes.rb" afterPath="$PROJECT_DIR$/config/routes.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/public/javascripts/extjs_ckeditor_plugin.js" afterPath="$PROJECT_DIR$/public/javascripts/extjs_ckeditor_plugin.js" />
     </list>
     <ignored path="rails4me.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -695,10 +677,19 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="backend.html.erb" pinned="false" current="false" current-in-tab="false">
+      <file leaf-file-name="backend.html.erb" pinned="false" current="true" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/app/views/layouts/backend.html.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="17" column="52" selection-start="543" selection-end="543" vertical-scroll-proportion="-11.115385">
+            <state line="29" column="6" selection-start="789" selection-end="789" vertical-scroll-proportion="0.7157895">
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="ext-all-debug.js" pinned="false" current="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/public/extjs/ext-all-debug.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state line="64648" column="57" selection-start="2359415" selection-end="2359415" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -707,43 +698,16 @@
       <file leaf-file-name="extjs_ckeditor_plugin.js" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/public/javascripts/extjs_ckeditor_plugin.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="53" column="39" selection-start="1765" selection-end="1765" vertical-scroll-proportion="0.0">
+            <state line="17" column="50" selection-start="631" selection-end="631" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="Gemfile" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Gemfile">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="13" column="30" selection-start="274" selection-end="274" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="edit.js.erb" pinned="false" current="true" current-in-tab="true">
+      <file leaf-file-name="edit.js.erb" pinned="false" current="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/app/views/describes/edit.js.erb">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="36" column="26" selection-start="978" selection-end="978" vertical-scroll-proportion="0.62222224">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="config.js" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/public/ckeditor/config.js">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="52" column="18" selection-start="1817" selection-end="1817" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="application.rb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/config/application.rb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="44" column="64" selection-start="2015" selection-end="2015" vertical-scroll-proportion="0.0">
+            <state line="29" column="17" selection-start="701" selection-end="701" vertical-scroll-proportion="0.0">
               <folding />
             </state>
           </provider>
@@ -763,7 +727,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/describes/index.xml.builder" />
         <option value="$PROJECT_DIR$/app/views/describes/index.js.erb" />
         <option value="$PROJECT_DIR$/app/views/layouts/frontend.html.erb" />
         <option value="$PROJECT_DIR$/app/views/describes/new.js.erb" />
@@ -775,9 +738,10 @@
         <option value="$PROJECT_DIR$/public/javascripts/ckeditor_plugin.js" />
         <option value="$PROJECT_DIR$/app/views/backend/index.html.erb" />
         <option value="$PROJECT_DIR$/config/application.rb" />
+        <option value="$PROJECT_DIR$/public/ckeditor/config.js" />
+        <option value="$PROJECT_DIR$/config/routes.rb" />
         <option value="$PROJECT_DIR$/public/javascripts/extjs_ckeditor_plugin.js" />
         <option value="$PROJECT_DIR$/app/views/layouts/backend.html.erb" />
-        <option value="$PROJECT_DIR$/public/ckeditor/config.js" />
         <option value="$PROJECT_DIR$/app/views/describes/edit.js.erb" />
       </list>
     </option>
@@ -854,53 +818,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="ckeditor" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rails4me" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rails4me" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rails4me" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rails4me" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="environments" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rails4me" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rails4me" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
+              <option name="myItemId" value="extjs" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1096,7 +1014,7 @@
       <window_info id="Data Sources" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Changes" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.32901832" sideWeight="0.5" order="7" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
-      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3279396" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
+      <window_info id="Find" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3279396" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="true" content_ui="tabs" />
       <window_info id="Dependency Viewer" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
       <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.3598505" sideWeight="0.67206043" order="0" side_tool="false" content_ui="tabs" />
@@ -1145,34 +1063,6 @@
     <breakpoint-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/application.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="29" selection-start="838" selection-end="838" vertical-scroll-proportion="0.7002288">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/projects_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/backend_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="3" column="18" selection-start="104" selection-end="104" vertical-scroll-proportion="0.05666667">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/controllers/application_controller.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="2" column="53" selection-start="129" selection-end="129" vertical-scroll-proportion="0.037777778">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/controllers/describes_controller.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="53" column="14" selection-start="1193" selection-end="1193" vertical-scroll-proportion="0.4911111">
@@ -1199,20 +1089,6 @@
         <state line="0" column="0" selection-start="0" selection-end="0" vertical-scroll-proportion="0.0" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="13" column="30" selection-start="274" selection-end="274" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/config/application.rb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="44" column="64" selection-start="2015" selection-end="2015" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/environments/production.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="30" column="28" selection-start="1089" selection-end="1090" vertical-scroll-proportion="0.56666666">
@@ -1227,30 +1103,72 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/jquery/index.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="1" column="29" selection-start="51" selection-end="51" vertical-scroll-proportion="0.0194508">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="13" column="30" selection-start="274" selection-end="274" vertical-scroll-proportion="0.24555555">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/extjs/src/widgets/Editor.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="21" selection-start="420" selection-end="421" vertical-scroll-proportion="0.42785236">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/config/application.rb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="45" column="73" selection-start="2089" selection-end="2089" vertical-scroll-proportion="1.2248322">
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/public/ckeditor/config.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="52" column="18" selection-start="1817" selection-end="1817" vertical-scroll-proportion="0.0">
+        <state line="52" column="18" selection-start="1817" selection-end="1817" vertical-scroll-proportion="1.0789022">
           <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/public/javascripts/extjs_ckeditor_plugin.js">
+    <entry file="file://$PROJECT_DIR$/config/routes.rb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="53" column="39" selection-start="1765" selection-end="1765" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/layouts/backend.html.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="17" column="52" selection-start="543" selection-end="543" vertical-scroll-proportion="-11.115385">
+        <state line="57" column="4" selection-start="2252" selection-end="2252" vertical-scroll-proportion="1.3104026">
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/describes/edit.js.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="36" column="26" selection-start="978" selection-end="978" vertical-scroll-proportion="0.62222224">
+        <state line="29" column="17" selection-start="701" selection-end="701" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/javascripts/extjs_ckeditor_plugin.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="17" column="50" selection-start="631" selection-end="631" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/public/extjs/ext-all-debug.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="64648" column="57" selection-start="2359415" selection-end="2359415" vertical-scroll-proportion="0.0">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/layouts/backend.html.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="29" column="6" selection-start="789" selection-end="789" vertical-scroll-proportion="0.7157895">
           <folding />
         </state>
       </provider>

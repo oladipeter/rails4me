@@ -40,23 +40,21 @@ Rails4me::Application.routes.draw do
 
   # Others
 
-  get "jquery/index"
-  root :to => "frontend#index", :path => "/"
-  get "frontend/index"
+  root :to => "frontend#index"
   get "backend/index"
   # resources :describes
-  match '/describes/:id' => 'describes#show', :as => 'backend_describe_show', :path => '/backend/describe/:id'
+  # match '/describes/:id' => 'describes#show', :as => 'backend_describe_show', :path => '/backend/describe/:id'
   # match '/backend/search' => 'backend#search', :as => 'search', :path => '/backend/search'
 
   devise_for :admins do
     get "admin", :to => "devise/sessions#new"
   end
 
-  scope :path_names => { :show_all => "allprojects" } do
-    resources :describes do
-      get 'show_all', :on => :member
-    end    
-  end  
+  #scope :path_names => { :show_all => "allprojects" } do
+  #  resources :describes do
+  #    get 'show_all', :on => :member
+  #  end
+  # end
 
   resources :frontend do
     member do

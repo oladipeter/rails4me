@@ -23,21 +23,27 @@ var edit_describe_form = new Ext.form.FormPanel({
             name: 'title'
         },
         {
-            xtype: 'ckeditor',
+            xtype: 'fckeditor',
             fieldLabel: 'Short description',
             name: 'short_description',
             CKConfig: {
                 /* Enter your CKEditor config paramaters here or define a custom CKEditor config file. */
-                /*customConfig : 'public/ckeditor/config.js',*/
                 toolbar: 'basic',
+                uiColor: '#dfe8f6',
                 height : 100,
                 width: 634
             }
         },
         {
-            xtype: 'textarea',
+            xtype: 'fckeditor',
             fieldLabel: 'Long description',
-            name: 'long_description'
+            name: 'long_description',
+            CKConfig: {
+                /* Enter your CKEditor config paramaters here or define a custom CKEditor config file. */
+                toolbar: 'basic',
+                height : 100,
+                width: 634
+            }
         },
         {
             xtype: 'textfield',

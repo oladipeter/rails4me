@@ -57,7 +57,7 @@ var describes_grid = new Ext.grid.GridPanel({
         {
             header : 'Describe short description',
             sortable : true,
-            width: '400px',
+            width: '300px',
             dataIndex : 'short_description'
         },
         {
@@ -97,13 +97,13 @@ var describes_grid = new Ext.grid.GridPanel({
 
 });
 
-var describes_index_window = new Ext.Window({
+  var describes_index_window = new Ext.Window({
     id: 'desc_window',
     autoHeight: true,
     maximizable : true,
     modal: true,
-    y: 200,
-    width: 1020,
+    // y: 200,
+    width: 1140,
     layout: 'fit',
     title: 'Rails4me describes',
 
@@ -150,7 +150,7 @@ var describes_index_window = new Ext.Window({
                                 eval(response_text);
                             },
                             failure: function(resp) {
-                                Ext.Msg.alert('ERROR!', 'Bad response from server!');
+                                Ext.Msg.alert('ERROR!', resp);
                             }
                         });
                     }

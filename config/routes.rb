@@ -13,6 +13,8 @@ Rails4me::Application.routes.draw do
   match '/projects/edit' => 'projects#edit', :as => 'edit_project'
   match '/projects/update/:id' => 'projects#update', :as => 'update_project'
   match '/projects/destroy' => 'projects#destroy', :as => 'destroy_project'
+  # Show project describes
+  match '/projects/show_project_describes' => 'projects#show_project_describes', :as => 'show_project_describes'
 
   # Describes routing
 

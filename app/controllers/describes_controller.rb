@@ -37,6 +37,7 @@ class DescribesController < ApplicationController
   end
 
   def new
+    @projects = Project.find(:all)
     @describe = Describe.new
     respond_to do |format|
       format.js

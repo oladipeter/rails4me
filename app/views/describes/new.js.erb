@@ -1,4 +1,9 @@
-Ext.QuickTips.init();
+<% if @projects == [] %>
+  /* If no projects show warning message!*/
+  Ext.Msg.alert('WARNING!', "No Describes, please check first the projects!");
+<% else %>
+
+  Ext.QuickTips.init();
 
 var new_describe_form = new Ext.form.FormPanel({
     url: '<%= create_describe_path %>',
@@ -16,27 +21,21 @@ var new_describe_form = new Ext.form.FormPanel({
         },
 
         {
-            xtype: 'ckeditor',
+            xtype: 'textarea',
             fieldLabel: 'Short description',
             name: 'describe[short_description]',
-            CKConfig: {
-                /* Enter your CKEditor config paramaters here or define a custom CKEditor config file. */
-                /*customConfig : 'public/ckeditor/config.js',*/
-                toolbar: 'light',
-                height : 100,
-                width: 500
-            }
+            width: '98%'
         },
         {
             xtype: 'ckeditor',
-            fieldLabel: 'Long description',
-            name: 'describe[long_description]',
+            fieldLabel: 'Short description',
+            name: 'short_description',
             CKConfig: {
                 /* Enter your CKEditor config paramaters here or define a custom CKEditor config file. */
-                /*customConfig : 'public/ckeditor/config.js',*/
                 toolbar: 'light',
+                uiColor: '#dfe8f6',
                 height : 100,
-                width: 500
+                width: 533
             }
         },
 
@@ -160,3 +159,6 @@ var new_describe_window = new Ext.Window({
 });
 
 new_describe_window.show();
+
+<% end %>
+

@@ -16,8 +16,9 @@ CKEDITOR.editorConfig = function( config )
   //config.resize_maxHeight = 2000;
   //config.resize_maxWidth = 750;
   
-  //config.startupFocus = true; 
-  
+  //config.startupFocus = true;
+
+  config.skin = 'v2';
   
   // works only with en, ru, uk languages
   config.extraPlugins = "embed,attachment,syntaxhighlight";
@@ -29,7 +30,7 @@ CKEDITOR.editorConfig = function( config )
   config.toolbar_Easy =
     [
         ['Source','syntaxhighlight','-','Preview','Templates'],
-        ['Cut','Copy','Paste','PasteText','PasteFromWord',],
+        ['Cut','Copy','Paste','PasteText','PasteFromWord'],
         ['Maximize','-','About'],
         ['Undo','Redo','-','Find','Replace','-','SelectAll','RemoveFormat'],
         ['Styles','Format'],
@@ -44,8 +45,9 @@ CKEDITOR.editorConfig = function( config )
 
   config.toolbar_light =
     [
-        ['Styles','RemoveFormat'],
-        ['Bold','Italic','Underline','PasteText','JustifyLeft','JustifyCenter','JustifyRight','JustifyBlock']
+        ['RemoveFormat','syntaxhighlight'],
+        ['Bold','Italic','Underline','PasteText','JustifyLeft','JustifyCenter','JustifyRight','JustifyBlock'],
+        ['Link','Unlink','Anchor']
     ];
 
   config.toolbar = 'basic';
@@ -54,7 +56,7 @@ CKEDITOR.editorConfig = function( config )
     [
         ['Source','syntaxhighlight','Styles','RemoveFormat'],
         ['Bold','Italic','Underline'],
-        ['Cut','Copy','Paste','PasteText','PasteFromWord',],
+        ['Cut','Copy','Paste','PasteText','PasteFromWord'],
         ['Image','Flash'],
         ['JustifyLeft','JustifyCenter','JustifyRight','JustifyBlock'],        
         ['Link','Unlink']

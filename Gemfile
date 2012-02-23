@@ -5,13 +5,18 @@ gem 'rails', '3.0.5'
 # Bundle edge Rails instead:
 # gem 'rails', :git => 'git://github.com/rails/rails.git'
 
-gem 'sqlite3'
+# gem 'sqlite3'
 gem 'devise', '1.2.1'
 gem 'ckeditor', '3.4.2.pre'
 gem "paperclip", "~> 2.3"
 
 gem 'aws-s3'
 gem 'jquery-rails', '>= 1.0.3'
+gem 'mongrel', '>= 1.2.0.pre2'
+gem 'rake','0.9.2'
+
+# Postgre
+gem "pg"
 
 # Use unicorn as the web server
 # gem 'unicorn'

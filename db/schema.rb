@@ -10,7 +10,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20110426082804) do
+ActiveRecord::Schema.define(:version => 20110620193353) do
 
   create_table "admins", :force => true do |t|
     t.string   "email",                             :default => "", :null => false
@@ -35,7 +35,7 @@ ActiveRecord::Schema.define(:version => 20110426082804) do
     t.string   "assetable_type",    :limit => 30
     t.string   "type",              :limit => 25
     t.string   "guid",              :limit => 10
-    t.integer  "locale",            :limit => 1,  :default => 0
+    t.integer  "locale",            :limit => 2,  :default => 0
     t.integer  "user_id"
     t.datetime "created_at"
     t.datetime "updated_at"
@@ -45,9 +45,18 @@ ActiveRecord::Schema.define(:version => 20110426082804) do
   add_index "ckeditor_assets", ["assetable_type", "type", "assetable_id"], :name => "idx_assetable_type"
   add_index "ckeditor_assets", ["user_id"], :name => "fk_user"
 
+  create_table "comments", :force => true do |t|
+    t.string   "author"
+    t.text     "content"
+    t.string   "email"
+    t.string   "website"
+    t.datetime "created_at"
+    t.datetime "updated_at"
+  end
+
   create_table "describes", :force => true do |t|
     t.string   "title"
-    t.text     "short_description", :limit => 255
+    t.text     "short_description"
     t.text     "long_description"
     t.string   "keywords"
     t.string   "feedback"
@@ -55,7 +64,8 @@ ActiveRecord::Schema.define(:version => 20110426082804) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "project_id"
-    t.boolean  "public",                           :default => false
+    t.boolean  "public",            :default => false
+    t.integer  "comment_id"
   end
 
   create_table "projects", :force => true do |t|

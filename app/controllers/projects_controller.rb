@@ -52,18 +52,51 @@ class ProjectsController < ApplicationController
 
   # GET /projects/1/edit
   def edit
+
+    # Always know this
     @project_id = params[:id]
+
+    # If don't need data create simple window
     unless params[:need_data]
+
+      # Find the project
       @project = Project.find(@project_id)
+
+      # Find project describes, call show_project_describes
+      show_project_describes(@project_id)
+
       respond_to do |format|
+        # Edit JS the simple window
         format.js
       end
-    else
-      @project = Project.find(@project_id)
-      @des = @project.describes.length
-      render :xml => { :success=> true, :project => @project }
-    end
 
+    else # If need data for the grid or the form then
+
+      # Find the project
+      @project = Project.find(@project_id)
+
+      # Find project describes, call show_project_describes
+      show_project_describes(@project_id)
+
+      # Project describes length
+      @des = @project.describes.length
+
+      if params[:from] == 'grid'
+        # Response in xml to describes grid
+        respond_to do |format|
+          format.xml
+        end
+      else
+        # Create xml to project form
+        render :xml => { :success=> true, :project => @project }
+      end
+
+    end
+  end
+
+  def show_project_describes(project_id)
+    @project_describes = Describe.find(:all, :conditions => ["project_id=?", project_id])
+    return @project_describes
   end
 
   def create

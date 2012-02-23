@@ -23,6 +23,10 @@ Rails4me::Application.configure do
   # Only use best-standards-support built into browsers
   config.action_dispatch.best_standards_support = :builtin
 
+  # Always stop the Ruby interpreter, this fix it. No commandline log.
+  config.log_level = :warn
+
+  # Localhost email config
   config.action_mailer.default_url_options = { :host => 'localhost:3000' }
 end
 

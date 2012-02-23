@@ -1,3 +1,109 @@
+// If we have describes for the project
+<% if @project_describes.length > 0 %>
+/* GRID */
+
+// Record definition
+
+var describes_data = Ext.data.Record.create([
+    'id',
+    'title',
+    'short_description',
+    'gitlink',
+    'public'
+]);
+
+// Store
+
+var describes_store = new Ext.data.Store({
+    url: '<%= edit_project_path(:id => @project_id, :need_data => true, :from => 'grid') %>',
+    reader: new Ext.data.XmlReader({
+        record:'row'                  // The repeated element which contains row information
+        // idPath:'id',
+        // totalProperty: "results",   // The element which contains the total dataset size (optional)
+        // idProperty: "id",           // The element within the row that provides an ID for the record (optional)
+        // messageProperty: "msg"
+    }, describes_data),
+    autoLoad: true
+});
+
+var describes_grid = new Ext.grid.GridPanel({
+    id: 'describes_list_grid',
+    closable: true,
+    title : 'Describes list',
+    renderTo : Ext.getBody(),
+    store: describes_store,
+    autoHeight : true,
+    loadMask: true,
+
+    // VIEW
+
+    view : new Ext.grid.GridView(),
+
+    // SELMODEL
+
+    selModel : new Ext.grid.RowSelectionModel({
+        singleSelect : true
+    }),
+
+    // COLMODEL
+
+    colModel: new Ext.grid.ColumnModel([
+        {
+            hidden: true,
+            dataIndex : 'id'
+        },
+        {
+            header : 'Describe name',
+            sortable : true,
+            width: '300px',
+            dataIndex : 'title'
+        },
+        {
+            header : 'Describe short description',
+            sortable : true,
+            width: '300px',
+            dataIndex : 'short_description'
+        },
+        {
+            header : 'Describe gitLink',
+            sortable : true,
+            width: '250px',
+            dataIndex : 'gitlink'
+        },
+        {
+            header : 'Public',
+            sortable : true,
+            width: '250px',
+            dataIndex : 'public'
+        }
+    ]),
+
+    // LISTENER
+
+    listeners : {
+        rowdblclick: function(dv, record, item, index, e) {
+            var record = describes_grid.selModel.getSelected();
+            Ext.Ajax.request({
+                url: '<%= edit_describe_path %>',
+                params: {
+                  id: record.data.id
+                },
+                success: function(response) {
+                    var response_text = response.responseText;
+                    eval(response_text);
+                },
+                failure: function(resp) {
+                    Ext.Msg.alert('Error!', 'Bad response from server!');
+                }
+            });
+        }
+    }
+
+});
+<% end %>
+
+
+
 var edit_project_form = new Ext.form.FormPanel({
     url: '<%= update_project_path(@project_id) %>',
     labelWidth: 130,
@@ -36,7 +142,17 @@ var edit_project_form = new Ext.form.FormPanel({
             allowBlank: false,
             width: '98%',
             name: 'project[description]'
+        },
+        {
+            xtype: 'panel',
+            fieldLabel: 'Describes',
+            <% if @project_describes.length < 1 %>
+            html: "No describe this project!",
+            <% else %>
+            html: '<%= "#{@project_describes.length} describes" %>'
+            <% end %>
         }
+
     ],
 
     buttons:[
@@ -86,10 +202,14 @@ var edit_project_window = new Ext.Window({
     modal: true,
     layout: 'form',
     title: 'Updating \"<%= @project.name %>\" project',
+    contentEL: "Describes to this project : <%= @project_describes %> ",
 
     items: [
-      // Load form into window
+      // Load form and grid into window
       edit_project_form
+      <% if @project_describes.length > 0 %>
+      ,describes_grid
+      <% end %>
     ]
 });
 

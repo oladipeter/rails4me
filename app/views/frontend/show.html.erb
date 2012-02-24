@@ -29,6 +29,7 @@
         Project name : <%= @describe.project.name %><br/>
           <% if @describe.gitlink %>
             <%= link_to "#{@describe.gitlink}", @describe.gitlink %>
+             <br/>
           <% end %>
           <% if @describe.feedback %>
             <%= link_to "#{@describe.feedback}", @describe.feedback %>

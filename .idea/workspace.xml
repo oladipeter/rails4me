@@ -650,10 +650,7 @@
       <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\swfupload\swfupload.swf" afterPath="" />
       <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\swfupload\swfupload.swfobject.js" afterPath="" />
       <change type="DELETED" beforePath="C:\rails_projects\rails4me\public\javascripts\ckeditor\themes\default\theme.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/describes/edit.js.erb" afterPath="$PROJECT_DIR$/app/views/describes/edit.js.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/app/views/projects/edit.js.erb" afterPath="$PROJECT_DIR$/app/views/projects/edit.js.erb" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/config/environments/production.rb" afterPath="$PROJECT_DIR$/config/environments/production.rb" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/Gemfile" afterPath="$PROJECT_DIR$/Gemfile" />
     </list>
     <ignored path="rails4me.iws" />
     <ignored path=".idea/workspace.xml" />
@@ -677,28 +674,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file leaf-file-name="edit.js.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/projects/edit.js.erb">
+      <file leaf-file-name="Gemfile" pinned="false" current="true" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Gemfile">
           <provider selected="true" editor-type-id="text-editor">
-            <state line="181" column="9" selection-start="4859" selection-end="4878" vertical-scroll-proportion="0.0">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="edit.js.erb" pinned="false" current="true" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/app/views/describes/edit.js.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="134" column="66" selection-start="3777" selection-end="3777" vertical-scroll-proportion="0.41555557">
-              <folding />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="index.js.erb" pinned="false" current="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/app/views/projects/index.js.erb">
-          <provider selected="true" editor-type-id="text-editor">
-            <state line="4" column="9" selection-start="141" selection-end="158" vertical-scroll-proportion="0.0">
+            <state line="15" column="5" selection-start="283" selection-end="283" vertical-scroll-proportion="0.28333333">
               <folding />
             </state>
           </provider>
@@ -718,7 +697,6 @@
   <component name="IdeDocumentHistory">
     <option name="changedFiles">
       <list>
-        <option value="$PROJECT_DIR$/app/views/layouts/backend.html.erb" />
         <option value="$PROJECT_DIR$/app/views/shared/_project_describes.html.erb" />
         <option value="$PROJECT_DIR$/app/views/projects/new.js.erb" />
         <option value="$PROJECT_DIR$/app/views/describes/index.js.erb" />
@@ -734,6 +712,7 @@
         <option value="$PROJECT_DIR$/config/environments/production.rb" />
         <option value="$PROJECT_DIR$/app/views/projects/edit.js.erb" />
         <option value="$PROJECT_DIR$/app/views/describes/edit.js.erb" />
+        <option value="$PROJECT_DIR$/Gemfile" />
       </list>
     </option>
   </component>
@@ -778,74 +757,6 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="rails4me" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rails4me" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rails4me" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="config" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rails4me" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rails4me" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rails4me" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rails4me" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="views" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="projects" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rails4me" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="rails4me" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="app" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -1116,11 +1027,6 @@
         <state line="9" column="48" selection-start="197" selection-end="197" vertical-scroll-proportion="0.25671142" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Gemfile">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="15" column="13" selection-start="321" selection-end="321" vertical-scroll-proportion="0.05872483" />
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/config/environments/development.rb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="28" column="25" selection-start="1108" selection-end="1108" vertical-scroll-proportion="0.7147651" />
@@ -1156,13 +1062,6 @@
         <state line="6" column="23" selection-start="186" selection-end="186" vertical-scroll-proportion="0.17114094" />
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/app/views/projects/edit.js.erb">
-      <provider selected="true" editor-type-id="text-editor">
-        <state line="181" column="9" selection-start="4859" selection-end="4878" vertical-scroll-proportion="0.0">
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/app/views/projects/index.js.erb">
       <provider selected="true" editor-type-id="text-editor">
         <state line="4" column="9" selection-start="141" selection-end="158" vertical-scroll-proportion="0.0">
@@ -1172,7 +1071,21 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/app/views/describes/edit.js.erb">
       <provider selected="true" editor-type-id="text-editor">
-        <state line="134" column="66" selection-start="3777" selection-end="3777" vertical-scroll-proportion="0.41555557">
+        <state line="140" column="157" selection-start="4074" selection-end="4074" vertical-scroll-proportion="0.5288889">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/app/views/projects/edit.js.erb">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="181" column="9" selection-start="4859" selection-end="4878" vertical-scroll-proportion="2.2366667">
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Gemfile">
+      <provider selected="true" editor-type-id="text-editor">
+        <state line="15" column="5" selection-start="283" selection-end="283" vertical-scroll-proportion="0.28333333">
           <folding />
         </state>
       </provider>

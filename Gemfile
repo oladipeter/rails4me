@@ -12,7 +12,11 @@ gem "paperclip", "~> 2.3"
 
 gem 'aws-s3'
 gem 'jquery-rails', '>= 1.0.3'
-gem 'mongrel', '>= 1.2.0.pre2'
+
+group :development, :test do
+  gem 'mongrel', '>= 1.2.0.pre2'
+end
+
 gem 'rake','0.9.2'
 
 # Postgre

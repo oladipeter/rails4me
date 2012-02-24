@@ -128,7 +128,12 @@ var edit_describe_form = new Ext.form.FormPanel({
             handler: function() {
                 edit_describe_form.getForm().submit({
                     success: function(form, action) {
-                        Ext.getCmp('describes_list_grid').getStore().reload();
+                        // If we come from describes side wont live the project_describes_list_grid we must check it
+                        if (Ext.getCmp('edit_project_window')) {
+                         Ext.getCmp('edit_project_window').close();
+                         Ext.getCmp('project_list_grid').store.reload();
+                        }
+
                         Ext.getCmp('edit_describe_form_window').close();
                         Ext.Msg.alert('Success!', 'You saved the new describe to database successfully!');
                     },

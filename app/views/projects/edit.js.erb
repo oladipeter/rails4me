@@ -7,14 +7,14 @@
 var describes_data = Ext.data.Record.create([
     'id',
     'title',
-    'short_description',
-    'gitlink',
-    'public'
+    'short_description'
+
 ]);
 
 // Store
 
 var describes_store = new Ext.data.Store({
+    id: 'project_describes_store',
     url: '<%= edit_project_path(:id => @project_id, :need_data => true, :from => 'grid') %>',
     reader: new Ext.data.XmlReader({
         record:'row'                  // The repeated element which contains row information
@@ -27,9 +27,9 @@ var describes_store = new Ext.data.Store({
 });
 
 var describes_grid = new Ext.grid.GridPanel({
-    id: 'describes_list_grid',
+    id: 'project_describes_list_grid',
     closable: true,
-    title : 'Describes list',
+    title : 'Describes list: <%= @project_describes.length %> describe\(s\)!',
     renderTo : Ext.getBody(),
     store: describes_store,
     autoHeight : true,
@@ -55,26 +55,14 @@ var describes_grid = new Ext.grid.GridPanel({
         {
             header : 'Describe name',
             sortable : true,
-            width: '300px',
+            width: '200px',
             dataIndex : 'title'
         },
         {
             header : 'Describe short description',
             sortable : true,
-            width: '300px',
+            width: '400px',
             dataIndex : 'short_description'
-        },
-        {
-            header : 'Describe gitLink',
-            sortable : true,
-            width: '250px',
-            dataIndex : 'gitlink'
-        },
-        {
-            header : 'Public',
-            sortable : true,
-            width: '250px',
-            dataIndex : 'public'
         }
     ]),
 
@@ -100,11 +88,13 @@ var describes_grid = new Ext.grid.GridPanel({
     }
 
 });
+
 <% end %>
 
 
 
 var edit_project_form = new Ext.form.FormPanel({
+    id: 'editProjectForm',
     url: '<%= update_project_path(@project_id) %>',
     labelWidth: 130,
     renderTo: Ext.getBody(),
@@ -142,15 +132,6 @@ var edit_project_form = new Ext.form.FormPanel({
             allowBlank: false,
             width: '98%',
             name: 'project[description]'
-        },
-        {
-            xtype: 'panel',
-            fieldLabel: 'Describes',
-            <% if @project_describes.length < 1 %>
-            html: "No describe this project!",
-            <% else %>
-            html: '<%= "#{@project_describes.length} describes" %>'
-            <% end %>
         }
 
     ],
@@ -187,6 +168,8 @@ var edit_project_form = new Ext.form.FormPanel({
             icon: '../images/exticons/cancel.png',
             handler: function() {
                 Ext.getCmp('edit_project_window').close();
+                // Index grid refresh
+                Ext.getCmp('project_list_grid').store.reload();
             }
 
         }

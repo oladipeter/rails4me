@@ -117,7 +117,18 @@ var describes_grid = new Ext.grid.GridPanel({
                         eval(response_text);
                     },
                     failure: function(resp) {
-                        Ext.Msg.alert('Error!', 'Bad response from server!');
+                        if (resp.status == "401") {
+                          // Ext.Msg.alert('Error!', "Your session expired, please sign in again to continue." + resp.status);
+                          Ext.Msg.alert('Name', 'Your session expired, please sign in again to continue.', function(btn) {
+                              if (btn == 'ok') {
+                                 location.href='http://rails44me.heroku.com/admins/sign_in';
+                              }
+                          });
+                        }
+                        else {
+                          Ext.Msg.alert('Error!', "Bad response from server!");
+                        }
+
                     }
                 });
             }
